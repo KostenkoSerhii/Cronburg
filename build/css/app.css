@@ -1,0 +1,238 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("fonts/iconfont.eot");
+  src: url("fonts/iconfont.eot?#iefix") format("eot"), url("fonts/iconfont.woff2") format("woff2"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #375272;
+}
+
+header .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.header-logo {
+  margin: 15px 40px 0 18px;
+  display: inline-block;
+}
+
+.header-menu {
+  display: inline-block;
+  max-width: 570px;
+  width: 100%;
+  padding-left: 150px;
+  margin-top: 20px;
+  vertical-align: top;
+  position: relative;
+}
+
+.header-menu__item {
+  display: inline-block;
+  width: 125px;
+  margin-right: 15px;
+}
+
+.header-menu__item:first-of-type {
+  position: absolute;
+  left: 0px;
+  margin-right: 0;
+  top: auto;
+  width: 80px;
+}
+
+.header-menu__item:first-of-type:before {
+  content: '';
+  position: absolute;
+  right: -37px;
+  height: 38px;
+  top: 50%;
+  margin-top: -19px;
+  width: 1px;
+  background: #fff;
+}
+
+.header-menu__item:nth-of-type(3n+1) {
+  margin-right: 0;
+}
+
+.header-menu__item a {
+  color: #ac975e;
+  text-transform: uppercase;
+  transition: all .3s;
+  font: 400 14px/18px "Open Sans";
+}
+
+.header-menu__item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact-phone {
+  color: #aac8ea;
+  font: 700 24px "Open Sans";
+  float: right;
+  margin-right: 20px;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.callback {
+  color: #fff;
+  font: 400 14px "Open Sans";
+  text-transform: uppercase;
+}
+
+.header-callback {
+  position: absolute;
+  text-align: right;
+  right: 30px;
+  top: 72px;
+  width: 80px;
+}
+
+.header-callback__img {
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  right: 112px;
+  top: 78px;
+  background: #8a2222;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.header-callback__img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background: #FFF;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=app.css.map */
