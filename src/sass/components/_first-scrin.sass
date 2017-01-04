@@ -1,0 +1,70 @@
+.first-scrin
+	background: url(../../img/first-scrin_bg.png) no-repeat
+	background-size: cover
+	background-position: 0 -95px
+	padding-top: 85px
+	padding-bottom: 50px
+	text-align: center
+h1
+	color: #134423
+	text-transform: uppercase
+	font: 600 65px $font-family
+	margin-bottom: 25px
+	span
+		font-size: 30px
+		display: block
+.first-scrin-description
+	max-width: 602px
+	border: 2px solid #aac8ea
+	border-radius: 15px
+	background: #fff
+	margin: 0 auto
+	padding: 50px 150px
+	position: relative
+	color: #24251e
+	font: 400 25px $font-family
+	text-align: left
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+	&:before
+		+s(desc-image)
+		left: 35px
+	&>span
+		color: #b72e22
+		font-weight: 700
+.first-scrin-description__key-block
+	position: absolute
+	right: 30px
+	top: 58px
+	width: 100px
+	height: 100px
+	color: #000
+	font: 400 12px $font-family
+	&:before
+		content: ''
+		position: absolute
+		+s(desc-image-2)
+		top: 45px
+		left: 50%
+		transform: translateX(-50%)
+	&>span
+		color: #b72e22
+.other-progect-link
+	display: block
+	position: absolute
+	width: 125px
+	height: 100px
+	left: 0
+	top: 300px
+	background: #fff
+	border-radius: 0 45% 45% 0
+	&:before
+		content: ''
+		position: absolute
+		left: 45px
+		top: 50%
+		transform: translateY(-50%)
+		+s(another-link-img)

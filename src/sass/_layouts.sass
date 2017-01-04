@@ -1,4 +1,22 @@
 .container
-	width: 1000px
-	margin: 0 auto
-	padding:  0 40px
+	position: relative
+	+rmin(320)
+		width: 100%
+		padding:  0 15px
+	+rmin(768)
+		width: 750px
+		margin: 0 auto
+	+rmin(992)
+		width: 970px
+		padding:  0 20px
+	+rmin(1200)
+		width: 1000px
+		padding:  0 40px
+.col, .col-last
+	position: relative
+	flex-basis: 280px
+	flex-grow: 0
+	flex-shrink: 0
+	margin-right: 40px
+.col-last
+	margin-right: 0

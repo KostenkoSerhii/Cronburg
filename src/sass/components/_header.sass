@@ -1,7 +1,5 @@
-
 // done by riverco.de
-$header-menu-item-color: #ac975e
-$contact-phone: #aac8ea
+
 a
 	text-decoration: none
 header
@@ -10,7 +8,6 @@ header
 		padding-top: 25px
 		padding-bottom: 25px
 		position: relative
-
 .header-logo
 	margin: 15px 40px 0 18px
 	display: inline-block
@@ -35,7 +32,7 @@ header
 		&:before
 			content: ''
 			position: absolute
-			right: -37px
+			right: -33px
 			height: 38px
 			top: 50%
 			margin-top: -19px
@@ -47,20 +44,20 @@ header
 		color: $header-menu-item-color
 		text-transform: uppercase
 		transition: all .3s
-		font: 400 14px/18px "Open Sans"
+		font: 400 14px/24px $font-family
 		&:hover
 			color: #fff
 			text-decoration: underline
 .contact-phone
-	color: $contact-phone
-	font: 700 24px "Open Sans"
+	color: $contact-phone-color
+	font: 700 24px $font-family
 	float: right
 	margin-right: 20px
 	text-transform: uppercase
 	vertical-align: top
 .callback 
 	color: #fff
-	font: 400 14px "Open Sans"
+	font: 400 14px $font-family
 	text-transform: uppercase
 .header-callback
 	position: absolute
@@ -68,6 +65,8 @@ header
 	right: 30px
 	top: 72px
 	width: 80px
+	&:hover
+		text-decoration: underline
 .header-callback__img
 	position: absolute
 	width: 102px
@@ -77,11 +76,10 @@ header
 	background: #8a2222
 	border: 1px solid #fff
 	border-radius: 50%
-	img
+	&:before
+		content: ''
 		position: absolute
 		left: 50%
 		top: 50%
+		+s(phone)
 		transform: translate(-50%, -50%)
-
-
-

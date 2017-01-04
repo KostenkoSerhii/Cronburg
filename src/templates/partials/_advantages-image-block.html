@@ -1,0 +1,13 @@
+		<!--begin advantages-image-block-->
+		<div class="advantages-image-block">
+			{% import "data/data.html" as tests %}
+			{% for test in tests.list2 %}
+			<div class="advantages-image-block__item">
+				<a href="{{test.linkhref}}">	
+					<img width="200" height="200" src="{{test.img}}" alt="{{test.alt}}">
+				</a>
+				<span>{{test.description}}</span>
+			</div>
+			{% endfor %}
+		</div>
+		<!--end advantages-image-block-->

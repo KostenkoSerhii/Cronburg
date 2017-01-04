@@ -1,0 +1,8 @@
+<div class="what-is-townhouse__slider-container slider-container">
+	<div class="slider responsive">
+		{% import "data/data.html" as tests %}
+		{% for test in tests.list %}
+		<div><img width="556" height="556" class="slider__img" src="{{test.img}}" alt="{{test.alt}}"></div>
+		{% endfor %}
+	</div>
+</div>

@@ -5,17 +5,19 @@ title: Cronburg
 
 {% block content %}
 	{% include "partials/_header.html" %}
+{% include "partials/_first-scrin.html" %}
+{% include "partials/_what-is-townhouse.html" %}
+{% include "partials/_advantages.html" %}
+<!-- 	{# mixin example #}
+{{mixins.icon('facebook')}} -->
 
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
 
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
-
+<!-- 	{# data usage example #}
+	{% import "data/data.html" as tests %}
+	
+	{% for test in tests.list %}
+	<li>{{test.title}}</li>
+	{% endfor %}
+{# end of example #}
+ -->
 {% endblock %}

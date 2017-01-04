@@ -2749,4 +2749,10 @@ function sayHello() {
     }
 })();
 
-sayHello();
+/*sayHello();*/
+$(document).ready(function () {
+
+    $('.slider').slick({
+        infinite: false
+    });
+});

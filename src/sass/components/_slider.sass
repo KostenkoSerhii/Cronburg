@@ -1,0 +1,31 @@
+.what-is-townhouse__slider-container
+	max-width: 560px
+	margin-bottom: 80px
+	.slider__img
+		border: 2px solid #48617e
+		border-radius: 50%
+.slick-prev, .slick-next
+	width: 100px
+	height: 100px
+	background: #375272
+	border-radius: 50%
+	z-index: 22
+	top: 75%
+	right: 20px
+	&:hover, &:focus
+		background: #375272
+	&:before
+			opacity: 1
+	&:before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		+s(slider-btn)
+		opacity: .6
+.slick-prev
+	transform: rotate(180deg)
+	left: 20px
+.slick-disabled
+	display: none !important

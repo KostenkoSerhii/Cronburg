@@ -4,4 +4,11 @@
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
 
-sayHello();
+/*sayHello();*/
+$(document).ready(function(){
+
+$('.slider').slick({
+    infinite: false
+});
+
+});
