@@ -1,0 +1,49 @@
+<!--begin quarter-plan-container-->
+<div class="quarter-plan-tabs container">
+	<div id="tabs" >
+		<ul class="tabs-nav">
+			<li><a href="#tabs-1" class="tabs-1">A</a></li>
+			<li><a href="#tabs-2" class="tabs-2">B</a></li>
+			<li><a href="#tabs-3" class="tabs-3">C</a></li>
+			<li><a href="#tabs-4" class="tabs-4">D</a></li>
+			<li><a href="#tabs-5" class="tabs-5">E</a></li>
+			<li><a href="#tabs-6" class="tabs-6">F</a></li>
+		</ul>
+		{% import "data/data.html" as tests %}
+		{% for test in tests.tabs %}
+		<div id="tabs-{{test.tabnumber}}" class="tab-item">
+			<div class="tab-item__description">
+				Таунхаус «{{test.townhouseclass}}» <span>108,97 м<sup>2</sup></span>
+			</div>
+			<div class="tab-item__col">
+				<div class="img-wrapper">
+					<img src="img/tab1-img.jpg" alt="tab1-img">
+				</div>
+				<span>I этаж</span>
+				<p>Общая площадь без учета перегородок</p>
+				<span>36,24 кв.м</span>
+			</div>
+			<div class="tab-item__col">
+				<div class="img-wrapper">
+					<img src="img/tab2-img.jpg" alt="tab2-img">
+				</div>
+				<span>II этаж</span>
+				<p>Общая площадь без учета перегородок</p>
+				<span>33,22 кв.м</span><br>
+				<span>балкон 0,72 кв.м</span>
+			</div>
+			<div class="tab-item__col">
+				<div class="img-wrapper">
+					<img src="img/tab3-img.jpg" alt="tab3-img">
+				</div>
+				<span>Мансардный этаж</span>
+				<p>Общая площадь без учета перегородок</p>
+				<span>24,10 кв.м</span><br>
+			</div>
+			<a class="download-plan" href="#" download>Скачать планировки таунхауса «{{test.townhouseclass}}» в PDF</a>
+		</div>
+		{% endfor %}
+
+	</div>
+</div>
+<!--end quarter-plan-container-->

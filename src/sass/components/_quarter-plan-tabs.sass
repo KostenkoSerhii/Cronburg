@@ -1,0 +1,133 @@
+.tabs-nav
+	position: absolute
+	right: 40px
+	top: -124px
+	z-index: 22
+	width: 500px
+	height: 130px
+	padding-top: 40px
+	padding-left: 20px
+	text-align: center
+	li
+		display: inline-block
+		margin-right: 7px
+		&:last-of-type
+			margin-right: 0px
+	a
+		color: white
+		font: 600 33px/60px $font-family
+		width: 68px
+		height: 68px
+		padding: 3px
+		display: block
+		border-radius: 50%
+		text-align: center
+		position: relative
+		background: red
+		&:before
+			content: ''
+			+coverdiv
+			width: 80px
+			height: 80px
+			+vcenter
+			border: 0px solid transparent
+			border-radius: 50%
+			transition: all .3s
+		&.tabs-1
+			background: $quarter-plan-tab1-color
+			&:hover
+				&:before
+					border: 4px solid $quarter-plan-tab1-color
+		&.tabs-2
+			background: $quarter-plan-tab2-color
+			&:hover
+				&:before
+					border: 4px solid $quarter-plan-tab2-color
+		&.tabs-3
+			background: $quarter-plan-tab3-color
+			&:hover
+				&:before
+					border: 4px solid $quarter-plan-tab3-color
+		&.tabs-4
+			background: $quarter-plan-tab4-color
+			&:hover
+				&:before
+					border: 4px solid $quarter-plan-tab4-color
+		&.tabs-5
+			background: $quarter-plan-tab5-color
+			&:hover
+				&:before
+					border: 4px solid $quarter-plan-tab5-color
+		&.tabs-6
+			background: $quarter-plan-tab6-color
+			&:hover
+				&:before
+					border: 4px solid $quarter-plan-tab6-color
+.quarter-plan-tabs
+	.tab-item
+		background: white
+		border: 2px solid #6db848
+		box-shadow: 3.5px 3.5px 5px rgba(25, 24, 20, 0.25)
+		padding: 50px 0px 40px
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		color: #000
+		font: 400 14px $font-family
+		span
+			font-weight: 600
+		p
+			margin: 8px 0
+		&:nth-of-type(1)
+			.tab-item__description
+				background: $quarter-plan-tab1-color
+		&:nth-of-type(2)
+			.tab-item__description
+				background: $quarter-plan-tab2-color
+		&:nth-of-type(3)
+			.tab-item__description
+				background: $quarter-plan-tab3-color
+		&:nth-of-type(4)
+			.tab-item__description
+				background: $quarter-plan-tab4-color
+		&:nth-of-type(5)
+			.tab-item__description
+				background: $quarter-plan-tab5-color
+		&:nth-of-type(6)
+			.tab-item__description
+				background: $quarter-plan-tab6-color
+	.tab-item__description
+		position: absolute
+		text-align: center
+		text-transform: uppercase
+		left: 0
+		top: -36px
+		width: 280px
+		color: #fff
+		font: 400 16px/35px $font-family
+		span
+			font-weight: 600
+			text-transform: none
+	.tab-item__col
+		flex-basis: 165px
+		flex-grow: 0
+		flex-shrink: 0
+	.img-wrapper
+		text-align: center
+		margin-bottom: 5px
+		height: 210px
+		img
+			max-height: 210px
+			width: auto
+.download-plan
+	text-decoration: underline
+	position: absolute;
+	right: 15px
+	bottom: 15px
+	color: #77bd54
+	&:hover
+		text-decoration: none
