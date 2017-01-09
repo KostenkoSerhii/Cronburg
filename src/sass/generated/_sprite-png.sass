@@ -1,12 +1,17 @@
 $icons: (0:0)
-$icons: map-merge($icons,('another-link-img': (X: -105px, Y:-158px, W: 64px, H: 64px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('desc-image-2': (X: -179px, Y:-158px, W: 31px, H: 53px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('desc-image': (X: 0px, Y:-158px, W: 95px, H: 103px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('facebook': (X: -274px, Y:-158px, W: 10px, H: 19px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('facebook@2x': (X: 0px, Y:-318px, W: 20px, H: 38px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('phone': (X: -220px, Y:-158px, W: 44px, H: 36px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('slider-btn': (X: 0px, Y:-271px, W: 34px, H: 37px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
-$icons: map-merge($icons,('slider-line': (X: 0px, Y:0px, W: 1101px, H: 148px, TW: 1101px, TH: 356px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('about-builder': (X: -179px, Y:-158px, W: 102px, H: 27px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('about-builder2': (X: -291px, Y:-158px, W: 101px, H: 27px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('another-link-img': (X: -105px, Y:-158px, W: 64px, H: 64px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('desc-image-2': (X: 0px, Y:-324px, W: 31px, H: 53px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('desc-image': (X: 0px, Y:-158px, W: 95px, H: 103px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('facebook': (X: -402px, Y:-158px, W: 10px, H: 19px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('facebook@2x': (X: 0px, Y:-387px, W: 20px, H: 38px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('jpg-down': (X: -53px, Y:-271px, W: 39px, H: 42px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('pdf-down': (X: 0px, Y:-271px, W: 43px, H: 43px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('phone-blue': (X: -156px, Y:-271px, W: 44px, H: 35px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('phone': (X: -102px, Y:-271px, W: 44px, H: 36px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('slider-btn': (X: -41px, Y:-324px, W: 34px, H: 37px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('slider-line': (X: 0px, Y:0px, W: 1101px, H: 148px, TW: 1101px, TH: 425px, IMG: '../img/sprite.png')))
 
 
 // Gets an attribute from the sass map
@@ -43,6 +48,18 @@ $icons: map-merge($icons,('slider-line': (X: 0px, Y:0px, W: 1101px, H: 148px, TW
   +sprite-retina($i)  
 
 //
+//.icon-about-builder
+//  width: 102px
+//  height: 27px
+//  background-image: url('../img/sprite.png')
+//  background-position: -179px -158px
+//
+//.icon-about-builder2
+//  width: 101px
+//  height: 27px
+//  background-image: url('../img/sprite.png')
+//  background-position: -291px -158px
+//
 //.icon-another-link-img
 //  width: 64px
 //  height: 64px
@@ -53,7 +70,7 @@ $icons: map-merge($icons,('slider-line': (X: 0px, Y:0px, W: 1101px, H: 148px, TW
 //  width: 31px
 //  height: 53px
 //  background-image: url('../img/sprite.png')
-//  background-position: -179px -158px
+//  background-position: 0px -324px
 //
 //.icon-desc-image
 //  width: 95px
@@ -65,25 +82,43 @@ $icons: map-merge($icons,('slider-line': (X: 0px, Y:0px, W: 1101px, H: 148px, TW
 //  width: 10px
 //  height: 19px
 //  background-image: url('../img/sprite.png')
-//  background-position: -274px -158px
+//  background-position: -402px -158px
 //
 //.icon-facebook@2x
 //  width: 20px
 //  height: 38px
 //  background-image: url('../img/sprite.png')
-//  background-position: 0px -318px
+//  background-position: 0px -387px
+//
+//.icon-jpg-down
+//  width: 39px
+//  height: 42px
+//  background-image: url('../img/sprite.png')
+//  background-position: -53px -271px
+//
+//.icon-pdf-down
+//  width: 43px
+//  height: 43px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -271px
+//
+//.icon-phone-blue
+//  width: 44px
+//  height: 35px
+//  background-image: url('../img/sprite.png')
+//  background-position: -156px -271px
 //
 //.icon-phone
 //  width: 44px
 //  height: 36px
 //  background-image: url('../img/sprite.png')
-//  background-position: -220px -158px
+//  background-position: -102px -271px
 //
 //.icon-slider-btn
 //  width: 34px
 //  height: 37px
 //  background-image: url('../img/sprite.png')
-//  background-position: 0px -271px
+//  background-position: -41px -324px
 //
 //.icon-slider-line
 //  width: 1101px

@@ -24,10 +24,17 @@
           <li class="header-menu__item"><a href="#">О застройщике</a></li>
           <li class="header-menu__item"><a href="#">Инфраструктура</a></li>
           <li class="header-menu__item"><a href="#">Контакты</a></li>
-        </ul> <a class="header-contact-phone contact-phone" href="tel:+74954807787">+7 (495) 480-77-87</a> <a class="callback header-callback" href="#">
+        </ul> <a class="header-contact-phone contact-phone" href="tel:+74954807787">+7 (495) 480-77-87</a> <a class="callback header-callback">
 			обратный звонок
 		</a>
         <div class="header-callback__img"> </div>
+        <div class="callback-block"> <a class="callback-block__phone" href="tel:+74954807787">+7 (495) 480-77-87
+	</a>
+          <p class="callback-block__name">обратный звонок</p>
+          <div class="img-block"></div>
+          <form> <input class="input-default" type="text" name="name" placeholder="Имя"> <input class="input-default" type="text" name="phone" placeholder="Ваш номер телефона"> <button class="button-default" type="submit">отправить</button> </form>
+          <a class="callback-block__close cloce-default"></a>
+        </div>
       </div>
       <!--end container-->
     </header>
@@ -61,7 +68,7 @@
               <div><img width="556" height="556" class="slider__img" src="img/slide-img.png" alt="alt"></div>
               <div><img width="556" height="556" class="slider__img" src="img/slide-img.png" alt="alt"></div>
             </div>
-          </div> <a href="#" class="what-is-townhouse__galery">Галерея</a>
+          </div> <a href="#galery-townhouse" class="what-is-townhouse__galery">Галерея</a>
           <div class="part-of-description col">
             <h2 class="what-is-townhouse__h2 what-is-townhouse__h2-mod"> Кронбург –<br> это ГАРМОНИЯ </h2> Кронбург – это настоящий европейский квартал таунхаусов с уютными улочками, красивыми бульварами, тенистыми скверами, развитой социальной и бытовой инфраструктурой. Здесь вас ждут уют, тишина и спокойствие.
             </div>
@@ -79,17 +86,17 @@
           <!--begin advantages-image-block-->
           <div class="advantages-image-block">
             <div class="advantages-image-block__item">
-              <a href="#"> <img width="200" height="200" src="img/adv-img1.png" alt="alt"> </a> <span>Авторская архитектура</span> </div>
+              <a href="#adv1" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img1.png" alt="alt"> </a> <span>Авторская архитектура</span> </div>
             <div class="advantages-image-block__item">
-              <a href="#"> <img width="200" height="200" src="img/adv-img2.png" alt="alt"> </a> <span>Удачное расположение</span> </div>
+              <a href="#adv2" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img2.png" alt="alt"> </a> <span>Удачное расположение</span> </div>
             <div class="advantages-image-block__item">
-              <a href="#"> <img width="200" height="200" src="img/adv-img3.png" alt="alt"> </a> <span>Парковка</span> </div>
+              <a href="#adv3" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img3.png" alt="alt"> </a> <span>Парковка</span> </div>
             <div class="advantages-image-block__item">
-              <a href="#"> <img width="200" height="200" src="img/adv-img4.png" alt="alt"> </a> <span>Охраняемая территория</span> </div>
+              <a href="#adv4" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img4.png" alt="alt"> </a> <span>Охраняемая территория</span> </div>
             <div class="advantages-image-block__item">
-              <a href="#"> <img width="200" height="200" src="img/adv-img5.png" alt="alt"> </a> <span>Экология и природа</span> </div>
+              <a href="#adv5" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img5.png" alt="alt"> </a> <span>Экология и природа</span> </div>
             <div class="advantages-image-block__item">
-              <a href="#"> <img width="200" height="200" src="img/adv-img6.png" alt="alt"> </a> <span>Соотношение цены</span> </div>
+              <a href="#adv6" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img6.png" alt="alt"> </a> <span>Соотношение цены</span> </div>
           </div>
           <!--end advantages-image-block-->
         </div>
@@ -121,7 +128,7 @@
         <!--begin container-->
         <div class="container">
           <div class="col quarter-plan__instruction">
-            <h2>План Квартала </h2>
+            <h2 class="quarter-plan__h2">План Квартала </h2>
             <p>Выберите место<br> расположение дома,<br> а в нем таунхауса. </p>
             <p>По цвету ниже, вы можете<br> посмотреть планировку<br> таунхауса </p>
           </div>
@@ -215,11 +222,195 @@
       <!--begin google-map-->
       <div class="google-map" id="google-map"> </div>
       <!--end google-map-->
-      <!-- 	
+      <!--begin google-map-->
+      <div class="about-builder">
+        <!--begin container-->
+        <div class="container">
+          <h2 class="about-builder__h2">а101 девелопмент</h2>
+          <p>мы строим город, где хочется жить!</p>
+          <!--begin builder-description-wrapper-->
+          <div class="builder-description-wrapper">
+            <div class="col builder-description__left">
+              <p><span>300</span> <br>профессионалов в штате </p>
+              <p> <span>23 <span> года</span></span><br> опыт на рынке недвижимости </p>
+              <p>БОЛЕЕ <span>40 000</span> построенных квартир </p>
+            </div>
+            <div class="col builder-description-middle"> <img class="a101" src="/img/A101.png" alt="A101">
+              <p class="builder-description-middle__p"><span>ГК «А101 ДЕВЕЛОПМЕНТ»</span> <br>реализует крупнейший в России градостроительный проект А101 в Новой Москве. </p> <a href="tel:+74954077-06">+7 (495) 407-79-06</a><br> <a href="mailto:website@a101.ru">website@a101.ru</a> </div>
+            <div
+              class="col-last builder-description__right">
+              <p><span>2,5 <span>млн м<sub>2</sub></span></span> жилья девелоперский портфель </p>
+              <p> Входим в <span>ТОП 3</span> по объему строительства в Новой Москве </p>
+              <p> <span class="gold-partner">Золотой партнер Сбербанка
+							</span> <br> Многократный победитель Национальной премии. </p>
+            </div>
+          </div>
+          <!--end builder-description-wrapper-->
+        </div>
+        <!--end container-->
+      </div>
+      <!--end google-map-->
+      <!--begin contacts-->
+      <div class="contacts">
+        <!--begin container-->
+        <div class="container">
+          <div class="col">
+            <h2 class="contacts__h2">Контакты</h2>
+            <p> АО «А101 ДЕВЕЛОПМЕНТ»<br> <a href="tel:+74954077906">+7 (495) 407-79-06</a><br> <a href="mailto:website@a101.ru">website@a101.ru</a> </p>
+            <p> <span class="custom-color">Офис продаж в Москве:</span><br> ул. Валовая, дом 35 <br> ( БЦ Wall Street, 5 этаж ) <br> ПН – ПТ 9.00 – 21.00 <br> СБ – ВС 10.00 – 18.00 <br> </p>
+            <p> <span class="custom-color">Офис продаж в Коммунарке:</span><br> Новая Москва, Поселок Коммунарка, дом 35, корпус 2 (3 км от МКАД за МЕГА Теплый Стан). <br> ПН – ПТ 9:00-20:30 <br> СБ – ВС 10:00-18:00 </p>
+          </div>
+          <div class="col">
+            <p> <span class="custom-color">Квартал таунхаусов Кронбург:</span><br> Город Москва, 9 км от МКАД, за МЕГА Теплый Стан. Поворот с Калужского шоссе на поселок Воскреснское налево на светофоре. Двигаться по главной дороге до поселка Воскресенское.
+              Далее поворот на лево по указателю на Потапово. </p>
+            <p class="custom-color"> Для просмотра объекта предварительно свяжитесь с менеджером по телефону <br> <a href="tel:+74954077906">+7 (495) 407-79-06</a> </p>
+            <p> Непосредственно до «Кронбурга» от М. Теплый стан можно добрат ься на маршрутном такси №577а (Mercedes). </p>
+          </div>
+          <div class="callback-questions">
+            <p>У вас есть вопрос?</p>
+            <form> <input class="input-default" type="text" name="name" placeholder="Имя"> <input class="input-default" type="text" name="email" placeholder="E-mail"> <textarea class="textarea-default" name="question" placeholder="Ваш вопрос">
+						</textarea> <button class="button-default" type="submit">отправить</button> </form>
+          </div>
+        </div>
+      </div>
+      <!--end container-->
+      <!--end contacts-->
+      <!--begin documentation-->
+      <div class="documentation">
+        <!--begin container-->
+        <div class="container">
+          <h2 class="documentation__h2">Документация</h2>
+          <div class="documentation-wrapper-list">
+            <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+          <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+        <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+      <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+    <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+      <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+        <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+          <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+            <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+              <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+                <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+                  <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+                    <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+                      <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+                        <div class="documentation__item 		
+				
+				download-pdf
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+                          <div class="documentation__item 		
+				
+				download-jpg
+				"> <a href="#" download>
+					Проектная декларация 30.03.12
+				</a> </div>
+                            </div>
+                            </div>
+                            <!--end container-->
+                            </div>
+                            <!--end documentation-->
+                            <div id="adv1" class="adv-popup-block white-popup-block mfp-hide"> <img class="adv-popup-block__img" width="200" height="200" src="img/adv-img1.png" alt="alt"> <span class="adv-popup-block__title">Авторская архитектура</span>
+                              <p class="adv-popup-block__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio porro error qui aspernatur voluptatum autem dolore repudiandae, quisquam atque. Officiis consequuntur ratione in quisquam, molestias.</p>
+                              <a class="mfp-close cloce-default"></a>
+                            </div>
+                            <div id="adv2" class="adv-popup-block white-popup-block mfp-hide"> <img class="adv-popup-block__img" width="200" height="200" src="img/adv-img2.png" alt="alt"> <span class="adv-popup-block__title">Удачное расположение</span>
+                              <p class="adv-popup-block__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio porro error qui aspernatur voluptatum autem dolore repudiandae, quisquam atque. Officiis consequuntur ratione in quisquam, molestias.</p>
+                              <a class="mfp-close cloce-default"></a>
+                            </div>
+                            <div id="adv3" class="adv-popup-block white-popup-block mfp-hide"> <img class="adv-popup-block__img" width="200" height="200" src="img/adv-img3.png" alt="alt"> <span class="adv-popup-block__title">Парковка</span>
+                              <p class="adv-popup-block__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio porro error qui aspernatur voluptatum autem dolore repudiandae, quisquam atque. Officiis consequuntur ratione in quisquam, molestias.</p>
+                              <a class="mfp-close cloce-default"></a>
+                            </div>
+                            <div id="adv4" class="adv-popup-block white-popup-block mfp-hide"> <img class="adv-popup-block__img" width="200" height="200" src="img/adv-img4.png" alt="alt"> <span class="adv-popup-block__title">Охраняемая территория</span>
+                              <p class="adv-popup-block__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio porro error qui aspernatur voluptatum autem dolore repudiandae, quisquam atque. Officiis consequuntur ratione in quisquam, molestias.</p>
+                              <a class="mfp-close cloce-default"></a>
+                            </div>
+                            <div id="adv5" class="adv-popup-block white-popup-block mfp-hide"> <img class="adv-popup-block__img" width="200" height="200" src="img/adv-img5.png" alt="alt"> <span class="adv-popup-block__title">Экология и природа</span>
+                              <p class="adv-popup-block__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio porro error qui aspernatur voluptatum autem dolore repudiandae, quisquam atque. Officiis consequuntur ratione in quisquam, molestias.</p>
+                              <a class="mfp-close cloce-default"></a>
+                            </div>
+                            <div id="adv6" class="adv-popup-block white-popup-block mfp-hide"> <img class="adv-popup-block__img" width="200" height="200" src="img/adv-img6.png" alt="alt"> <span class="adv-popup-block__title">Соотношение цены</span>
+                              <p class="adv-popup-block__description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio porro error qui aspernatur voluptatum autem dolore repudiandae, quisquam atque. Officiis consequuntur ratione in quisquam, molestias.</p>
+                              <a class="mfp-close cloce-default"></a>
+                            </div>
+                            <!-- 	
 
 <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
  -->
-      <!-- 	
+                            <!-- 	
 	
 	
 	
@@ -235,15 +426,15 @@
 	
 
  -->
-    </div>
-    <!-- END content -->
-    <!-- BEGIN scripts -->
-    <!--   <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+                            </div>
+                            <!-- END content -->
+                            <!-- BEGIN scripts -->
+                            <!--   <script type="text/javascript" src="js/lib/jquery.min.js"></script>
 <script type="text/javascript" src="js/lib/slick.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.magnify.js"></script>
 <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script> -->
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- END scripts -->
+                            <script type="text/javascript" src="js/app.js"></script>
+                            <!-- END scripts -->
   </body>
 
 </html>

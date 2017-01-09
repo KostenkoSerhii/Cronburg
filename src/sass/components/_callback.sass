@@ -1,0 +1,45 @@
+.callback-block
+	background: #aac8ea
+	width: 320px
+	position: absolute
+	right: 0
+	top: 0
+	padding: 25px 35px 25px
+	z-index: 22
+	display: none
+	.img-block
+		width: 102px
+		height: 102px
+		background: #fff
+		border-radius: 50%
+		border: 1px solid #375272
+		position: absolute
+		+vcenter
+		top: 130px
+		&:before
+			content: ''
+			position: absolute
+			+s(phone-blue)
+			+vcenter
+	input
+		margin-bottom: 15px
+	button
+		margin-top: 30px
+.callback-block__phone
+	@extend .contact-phone
+	color: #375272
+	margin-bottom: 150px
+.callback-block__name
+	color: #375272
+	font: 400 14px/18px $font-family
+	text-transform: uppercase
+	position: absolute
+	right: 35px
+	text-align: right
+	width: 100px
+	top: 76px
+.callback-block__close
+	position: absolute
+	right: 35px
+	top: 150px
+

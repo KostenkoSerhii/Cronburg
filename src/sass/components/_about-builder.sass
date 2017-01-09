@@ -1,0 +1,76 @@
+.about-builder__h2
+	color: #21afa4
+	text-shadow: 0px 0px 2px #21afa4
+	text-align: center
+	position: relative
+	display: inline-block
+	font-size: 31px
+	margin-bottom: 25px
+	&:before, &:after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		+s(about-builder)
+	&:before
+		left: -127px
+	&:after
+		right: -127px
+		+s(about-builder2)
+	&+p
+		color: #ef3122
+		text-transform: uppercase
+		font: 700 20px $font-family
+		margin-bottom: 56px
+.about-builder
+	padding-top: 50px
+	padding-bottom: 75px
+	text-align: center
+	background: #f5f5f5
+.builder-description-wrapper
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	text-align: left
+	.col, .col-last
+		color: #222
+		font: 400 24px/30px $font-family
+		text-transform: uppercase
+		p
+			margin-bottom: 45px
+			&:last-of-type
+				margin-bottom: 0
+		span
+			color: #4faea2
+			font-size: 36px
+			font-weight: 700
+			span
+				font-size: 24px
+				text-transform: none
+			&.gold-partner
+				font-size: 24px
+				text-transform: uppercase
+	.builder-description-middle
+		text-align: center
+		color: #222
+		font: 400 16px/30px $font-family
+		text-transform: none
+		p.builder-description-middle__p
+			margin: 25px 0
+		span
+			color: #222
+			font: 400 16px $font-family
+			line-height: 30px
+		a
+			color: #ff151f
+			line-height: 24px
+.builder-description__left, .builder-description__right
+	padding-top: 10px
+.builder-description__right
+	text-align: right
+	p:last-of-type
+		font-size: 16px
+		text-transform: none
+		line-height: 24px

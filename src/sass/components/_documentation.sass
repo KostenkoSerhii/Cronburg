@@ -1,0 +1,50 @@
+
+.documentation
+	background: #25374b
+	.container
+		background: #3f5a7a
+		top: -150px
+		padding-top: 43px
+		padding-bottom: 30px
+.documentation__h2
+	text-align: center
+	color: #aac8ea
+	margin-bottom: 30px
+.documentation-wrapper-list
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+.documentation__item
+	flex-basis: 280px
+	padding-left: 45px
+	flex-grow: 0
+	flex-shrink: 0
+	position: relative
+	margin-bottom: 25px
+	&:nth-of-type(3n+2)
+		margin: 0 40px
+	&:last-of-type
+		margin-bottom: 0
+	&.download-pdf, &.download-jpg
+		&:before
+			content: ''
+			position: absolute
+			left: -5px
+			top: 50%
+			transform: translateY(-50%)
+	&.download-pdf
+		&:before
+			+s(pdf-down)
+	&.download-jpg
+		&:before
+			+s(jpg-down)
+	a
+		color: #fff
+		font: 400 16px/24px $font-family
+		text-decoration: underline
+	&:hover
+		text-decoration: none
