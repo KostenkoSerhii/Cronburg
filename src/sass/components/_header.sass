@@ -8,9 +8,19 @@ header
 		padding-top: 25px
 		padding-bottom: 25px
 		position: relative
+		+r(768)
+			padding-top: 10px
+			padding-bottom: 40px
+			text-align: center
 .header-logo
 	margin: 15px 40px 0 18px
 	display: inline-block
+	+r(1100)
+		margin: 15px 15px 0 0px
+	+r(768)
+		margin: 0 auto
+		display: inline-block
+
 .header-menu
 	display: inline-block
 	max-width: 570px
@@ -19,16 +29,38 @@ header
 	margin-top: 20px
 	vertical-align: top
 	position: relative
+	+r(1100)
+		padding-left: 90px
+		width: 510px
+	+r(768)
+		text-align: left
+		display: none
+		padding: 10px 10px
+		margin-top: 0
+		width: 150px
+		position: absolute
+		top: 100px
+		left: 20px
+		z-index: 22
+		border: 1px solid red
+		background: #fff
 .header-menu__item
 	display: inline-block
 	width: 125px
 	margin-right: 15px
+	+r(768)
+		margin-right: 0
+		width: 100%
+		margin: 5px 0
 	&:first-of-type
 		position: absolute
 		left: 0px
 		margin-right: 0
 		top: auto
 		width: 80px
+		+r(768)
+			position: relative
+			width: 100%
 		&:before
 			content: ''
 			position: absolute
@@ -38,6 +70,8 @@ header
 			margin-top: -19px
 			width: 1px
 			background: #fff
+			+r(1100)
+				display: none
 	&:nth-of-type(3n+1)
 		margin-right: 0
 	a
@@ -48,6 +82,8 @@ header
 		&:hover
 			color: #fff
 			text-decoration: underline
+			+r(768)
+				color: inherit
 .contact-phone
 	color: $contact-phone-color
 	font: 700 24px $font-family
@@ -55,6 +91,15 @@ header
 	margin-right: 20px
 	text-transform: uppercase
 	vertical-align: top
+	+r(1100)
+		font-size: 20px 
+		float: none
+		position: absolute
+		margin-right: 0
+		top: 10px
+		right: 60px
+	+r(768)
+		display: none
 .callback 
 	color: #fff
 	font: 400 14px $font-family
@@ -69,6 +114,8 @@ header
 	width: 80px
 	&:hover
 		text-decoration: underline
+	+r(768)
+		display: none
 .header-callback__img
 	position: absolute
 	width: 102px
@@ -78,6 +125,16 @@ header
 	background: #8a2222
 	border: 1px solid #fff
 	border-radius: 50%
+	+r(1100)
+		width: 80px
+		height: 80px
+		top: 90px
+	+r(768)
+		width: 60px
+		height: 60px
+		z-index: 2
+		right: 20px
+		top: 45px
 	&:before
 		content: ''
 		position: absolute
@@ -85,3 +142,16 @@ header
 		top: 50%
 		+s(phone)
 		transform: translate(-50%, -50%)
+.header-menu-btn
+	display: none
+	+r(768)
+		display: block
+		position: absolute
+		bottom: 47px
+		left: 20px
+		transform: translate(-50%,-50%)
+		z-index: 2
+		&:before
+			content: ''
+			+coverdiv
+			+s(mobile-menu-btn)

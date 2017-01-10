@@ -1,8 +1,26 @@
 .contacts__h2
 	color: $contacts-custom-color
 	margin-bottom: 40px
+	+r(768)
+		margin-bottom: 20px
 .contacts
-	padding-bottom: 175px 
+	padding-bottom: 175px
+	padding-top: 92px 
+	background: url("../img/advantages_bg.png")  no-repeat
+	background-size: cover
+	color: #fff
+	font: $simple-text-style
+	line-height: 24px
+	+r(1100)
+		padding-top: 60px
+		font: $simple-text-style-tablet-mobile
+		.col:first-of-type
+			margin-right: 20px
+	+r(768)
+		text-align: center
+		padding-top: 40px
+		.col:first-of-type
+			margin-right: 0px
 	.container
 		display: -webkit-flex
 		display: -moz-flex
@@ -10,12 +28,9 @@
 		display: -o-flex
 		display: flex
 		position: relative
-	background: url(/img/advantages_bg.png)  no-repeat
-	background-size: cover
-	padding-top: 92px 
-	color: #fff
-	font: $simple-text-style
-	line-height: 24px
+		+r(768)
+			flex-wrap: wrap
+			justify-content: center
 	a
 		color: #fff
 	.custom-color
@@ -24,17 +39,26 @@
 			color: inherit
 	p
 		margin-bottom: 30px
+		+r(768)
+			margin-bottom: 10px
 .callback-questions
 	width: 320px
 	padding: 27px 35px 25px
 	background: #aac8ea
 	position: absolute
 	right: 0px
+	+r(1100)
+		width: 300px
+	+r(768)
+		position: relative
+		
 	p
 		color: #375272
 		font: 600 30px/30px $font-family
 		text-transform: uppercase
 		margin-bottom: 20px
+		+r(1100)
+			font-size: 24px
 	input
 		margin-bottom: 10px
 	

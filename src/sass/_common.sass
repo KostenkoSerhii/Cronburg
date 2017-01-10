@@ -3,6 +3,7 @@ $screen-sm: 768px
 $font-family: "Open Sans"
 $simple-text-color: #222
 $simple-text-style: 400 16px/30px "Open Sans"
+$simple-text-style-tablet-mobile: 400 14px/24px "Open Sans"
 $header-menu-item-color: #ac975e
 $contact-phone-color: #aac8ea
 $quarter-plan-tab1-color: #b84848
@@ -14,10 +15,15 @@ $quarter-plan-tab6-color: #b848aa
 $contacts-custom-color: #aac8ea
 *
 	box-sizing: border-box
+
 h2
 	color: #375272
 	font: 600 30px/36px $font-family
 	text-transform: uppercase
+	+r(1100)
+		font: 600 22px/28px $font-family
+	+r(768)
+		font: 600 16px/20px $font-family
 .input-default, .textarea-default
 		font: 400 16px $font-family
 		font-style: italic
@@ -52,6 +58,11 @@ h2
 	background: #8a2222
 	border-radius: 50%
 	cursor: pointer
+	+r(1100)
+		width: 40px
+		height: 40px
+		font-size: 24px
+		line-height: 40px
 	+tr(all .3s)
 	&:before
 		content: 'X'

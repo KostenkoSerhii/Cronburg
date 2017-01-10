@@ -7,6 +7,11 @@
 	padding: 25px 35px 25px
 	z-index: 22
 	display: none
+	+r(1100)
+		width: 300px
+		padding: 25px
+	+r(768)
+		width: 100%
 	.img-block
 		width: 102px
 		height: 102px
@@ -16,6 +21,9 @@
 		position: absolute
 		+vcenter
 		top: 130px
+		+r(1100)
+			width: 80px
+			height: 80px
 		&:before
 			content: ''
 			position: absolute
@@ -26,9 +34,19 @@
 	button
 		margin-top: 30px
 .callback-block__phone
-	@extend .contact-phone
+	color: $contact-phone-color
+	font: 700 24px $font-family
+	text-align: center
+	display: block
+	float: none
+	text-transform: uppercase
+	vertical-align: top
 	color: #375272
 	margin-bottom: 150px
+	+r(1100)
+		font-size: 20px
+	+r(768)
+		margin-bottom: 10px
 .callback-block__name
 	color: #375272
 	font: 400 14px/18px $font-family
@@ -38,8 +56,16 @@
 	text-align: right
 	width: 100px
 	top: 76px
+	+r(768)
+		position: relative
+		text-align: center
+		width: 100%
+		top: 0
+		right: 0
+		margin-bottom: 120px
 .callback-block__close
 	position: absolute
 	right: 35px
 	top: 150px
-
+	+r(1100)
+		top: 135px

@@ -6,10 +6,8 @@
 	+rmin(768)
 		width: 750px
 		margin: 0 auto
-	+rmin(992)
-		width: 970px
 		padding:  0 20px
-	+rmin(1200)
+	+rmin(1100)
 		width: 1000px
 		padding:  0 40px
 .col, .col-last
@@ -18,5 +16,11 @@
 	flex-grow: 0
 	flex-shrink: 0
 	margin-right: 40px
+	+r(1100)
+		margin-right: 0px
+		flex-basis: 200px
+	+r(768)
+		flex-basis: 100%
+		margin-bottom: 20px
 .col-last
 	margin-right: 0

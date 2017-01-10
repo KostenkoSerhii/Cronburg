@@ -11,12 +11,24 @@
 	width: 150px
 	margin-top: 57px
 	margin-bottom: 36px
+	+r(1100)
+		width: 100%
+		margin-bottom: 20px
+		margin-top: 0
+		text-align: center
+	+r(768)
+		margin-bottom: 20px
+		
 .quarter-plan__instruction
+	+r(1100)
+		flex-basis: 100%
 	p
 		color: #222
 		font: 400 16px/24px $font-family
 		padding-left: 50px
 		position: relative
+		+r(1100)
+			display: none
 		&:first-of-type
 			margin-bottom: 27px
 			&:before
@@ -39,9 +51,8 @@
 	width: 644px
 	height: 429px
 	z-index: 1
-
-
-
+	+r(1100)
+		display: none
 html.magnifying > body
 	overflow-x: hidden !important
 .magnify 
@@ -53,12 +64,9 @@ html.magnifying > body
 	height: 126px
 	border-radius: 100%
 	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85) 
-	
-	
 	cursor: none
 	display: none
 	z-index: 100
-
 .magnify .magnify-lens.loading 
 	background: #333 !important
 	opacity: 0.8

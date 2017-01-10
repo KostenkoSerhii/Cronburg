@@ -1,29 +1,55 @@
 .first-scrin
-	background: url(/img/first-scrin_bg.png) no-repeat
-	background-size: cover
-	background-position: 0 -95px
 	padding-top: 84px
 	padding-bottom: 50px
 	text-align: center
+	position: relative
+	+r(1100)
+		padding-top: 50px
+	&:before
+		content: ''
+		+coverdiv
+		background: url("../img/first-scrin_bg.png") no-repeat
+		background-size: cover
+		background-position: 50% 0
+		z-index: -1
 h1
 	color: #134423
 	text-transform: uppercase
 	font: 600 65px $font-family
 	margin-bottom: 25px
+	+r(1100)
+		font-size: 35px
+	+r(768)
+		font-size: 20px
 	span
 		font-size: 30px
 		display: block
+		+r(1100)
+			font-size: 18px
+		+r(768)
+			font-size: 16px
 .first-scrin-description
 	max-width: 602px
 	border: 2px solid #aac8ea
 	border-radius: 15px
 	background: #fff
 	margin: 0 auto
-	padding: 50px 150px
+	padding: 50px 145px
 	position: relative
 	color: #24251e
 	font: 400 25px $font-family
 	text-align: left
+	+r(1100)
+		font: 400 18px $font-family
+		max-width: 500px
+		padding: 50px 135px
+	+r(768)
+		padding: 20px 30px
+	p
+		margin: 0 auto
+		+r(768)
+			width: 100%
+			text-align: center
 	&:before
 		content: ''
 		position: absolute
@@ -32,6 +58,10 @@ h1
 	&:before
 		+s(desc-image)
 		left: 35px
+		+r(1100)
+			left: 20px
+		+r(768)
+			display: none
 	&>span
 		color: #b72e22
 		font-weight: 700
@@ -43,6 +73,10 @@ h1
 	height: 100px
 	color: #000
 	font: 400 12px $font-family
+	+r(1100)
+		top: 53px
+	+r(768)
+		display: none
 	&:before
 		content: ''
 		position: absolute
@@ -50,6 +84,8 @@ h1
 		top: 45px
 		left: 50%
 		transform: translateX(-50%)
+		+r(1100)
+			top: 37px
 	&>span
 		color: #b72e22
 .other-progect-link
@@ -61,6 +97,11 @@ h1
 	top: 300px
 	background: #fff
 	border-radius: 0 45% 45% 0
+	z-index: 2
+	+r(1100)
+		top: 100px
+	+r(768)
+		display: none
 	&:before
 		content: ''
 		position: absolute

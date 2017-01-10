@@ -6,12 +6,16 @@
 	display: inline-block
 	font-size: 31px
 	margin-bottom: 25px
+	+r(768)
+		font-size: 16px
 	&:before, &:after
 		content: ''
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
 		+s(about-builder)
+		+r(768)
+			display: none
 	&:before
 		left: -127px
 	&:after
@@ -22,6 +26,11 @@
 		text-transform: uppercase
 		font: 700 20px $font-family
 		margin-bottom: 56px
+		+r(1100)
+			font-size: 18px
+		+r(768)
+			font-size: 14px
+			margin-bottom: 10px
 .about-builder
 	padding-top: 50px
 	padding-bottom: 75px
@@ -34,43 +43,82 @@
 	display: -o-flex
 	display: flex
 	text-align: left
+	+r(1100)
+		justify-content: space-around
+	+r(768)
+		justify-content: center
+		flex-wrap: wrap
 	.col, .col-last
 		color: #222
 		font: 400 24px/30px $font-family
 		text-transform: uppercase
+		+r(1100)
+			font: 400 18px/24px $font-family
+		+r(768)
+			font: $simple-text-style-tablet-mobile
+			text-transform: none
+			margin-bottom: 0
 		p
 			margin-bottom: 45px
+			+r(1100)
+				margin-bottom: 20px
+			+r(768)
+				margin-bottom: 10px
+				br
+					display: none
 			&:last-of-type
 				margin-bottom: 0
 		span
 			color: #4faea2
 			font-size: 36px
 			font-weight: 700
+			+r(1100)
+				font-size: 28px
+			+r(768)
+				font-size: 20px
 			span
 				font-size: 24px
+				+r(1100)
+					font-size: 18px
+				+r(768)
+					font-size: 16px
 				text-transform: none
 			&.gold-partner
 				font-size: 24px
 				text-transform: uppercase
+				+r(768)
+					font-size: 20px
 	.builder-description-middle
 		text-align: center
 		color: #222
 		font: 400 16px/30px $font-family
 		text-transform: none
+		+r(768)
+			margin-top: 20px
 		p.builder-description-middle__p
 			margin: 25px 0
 		span
 			color: #222
 			font: 400 16px $font-family
 			line-height: 30px
+			+r(1100)
+				font-size: 16px
 		a
 			color: #ff151f
 			line-height: 24px
-.builder-description__left, .builder-description__right
-	padding-top: 10px
+			+r(768)
+				display: block
+
 .builder-description__right
 	text-align: right
 	p:last-of-type
 		font-size: 16px
 		text-transform: none
 		line-height: 24px
+		+r(768)
+			font-size: 14px
+
+.builder-description__left, .builder-description__right
+	padding-top: 10px
+	+r(768)
+		text-align: center

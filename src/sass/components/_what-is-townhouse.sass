@@ -1,5 +1,8 @@
 .what-is-townhouse
 	padding: 80px 0 90px 0px
+	+r(1100)
+	padding: 50px 0 60px 0px
+	overflow: hidden
 	.container
 		display: -webkit-flex
 		display: -moz-flex
@@ -7,6 +10,10 @@
 		display: -o-flex
 		display: flex
 		flex-wrap: wrap
+		+r(1100)
+			justify-content: space-around
+		+r(768)
+			justify-content: flex-start
 		&:before
 			content: ''
 			position: absolute
@@ -14,18 +21,40 @@
 			left: 0
 			+s(slider-line)
 			z-index: 0
+			+r(1100)
+				left: 50%
+				transform: translateX(-50%)
+			+r(768)
+				display: none
 
 .part-of-description
 	color: $simple-text-color
 	font: $simple-text-style
+	+r(1100)
+		font: $simple-text-style-tablet-mobile
 	&:nth-of-type(1)
 		margin-right: 65px	
+		+r(1100)
+			margin-right: 0px	
 .what-is-townhouse__h2
 	margin-bottom: 30px
 	margin-top: 5px
+	+r(1100)
+		margin-bottom: 20px
+	+r(768)
+		text-align: center
 .what-is-townhouse__h2-mod
 	position: absolute
 	top: -110px
+	+r(1100)
+		top: -90px
+	+r(768)
+		text-align: center
+		position: relative
+		top: 0
+		margin-top: 20px
+		br
+			display: none
 .what-is-townhouse__galery
 	position: absolute
 	right: -15px
@@ -36,5 +65,10 @@
 	text-transform: uppercase
 	transform: rotate(-10deg)
 	transition: all .3s
+	+r(1100)
+		right: 100px
+		top: 59%
+	+r(768)
+		display: none
 	&:hover
 		text-decoration: underline

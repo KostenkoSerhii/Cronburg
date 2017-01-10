@@ -1,25 +1,26 @@
-.mfp-content
+.adv-popup-block
 	max-width: 630px 
 	width: 100%
 	border-radius: 20px
 	background: #fff
 	padding: 50px 45px
+	position: relative
+	margin: 0 auto
 	.cloce-default
 		opacity: 1
 		color: #fff
 		position: absolute
-		right: -32px
-		top: -65px
+		right: 15px
+		top: 15px
 		&:hover
 			color: #8a2222
-
-.adv-popup-block
-	position: relative
 .adv-popup-block__img
 	border-radius: 50%
 	border: 3px solid #375272
 	float: left
 	margin-right: 37px
+	+r(768)
+		display: none
 .adv-popup-block__title
 	margin-top: 30px
 	margin-bottom: 14px
@@ -27,7 +28,29 @@
 	color: #375272
 	font: 600 20px/30px $font-family
 	display: block
+	+r(768)
+		margin-top: 0
 .adv-popup-block__description
 	display: block
 	color: #222
 	font: 400 16px/18px $font-family
+.mfp-fade
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: all 0.15s ease-out
+    -moz-transition: all 0.15s ease-out
+    transition: all 0.15s ease-out
+    &.mfp-ready
+      opacity: 0.8
+    &.mfp-removing
+      opacity: 0
+  &.mfp-wrap
+    .mfp-content
+      opacity: 0
+      -webkit-transition: all 0.15s ease-out
+      -moz-transition: all 0.15s ease-out
+      transition: all 0.15s ease-out
+    &.mfp-ready .mfp-content
+      opacity: 1
+    &.mfp-removing .mfp-content
+      opacity: 0
