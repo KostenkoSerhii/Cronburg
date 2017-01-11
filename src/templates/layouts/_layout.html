@@ -34,7 +34,8 @@
       var contentString = 'Частная школа1';
       map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 55.524763, lng: 37.478325},
-        zoom: 15
+        zoom: 15,
+        scrollwheel: false
       });
       setMarkers(map);
     }
@@ -57,10 +58,8 @@
           map: map,
           icon: place[3]
         });
-        var markers =[];
-        markers[i] = marker;
         marker.addListener('click', function() {
-          infowindow.open(map, markers);
+          infowindow.open(map, marker);
         });
       }
     }
