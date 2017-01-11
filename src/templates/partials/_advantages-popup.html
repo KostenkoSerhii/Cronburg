@@ -1,10 +1,9 @@
 {% import "data/data.html" as tests %}
-			{% for test in tests.list2 %}
-			<div id="{{test.id}}" class="adv-popup-block white-popup-block mfp-hide">
-					<img class="adv-popup-block__img" width="200" height="200" src="{{test.img}}" alt="{{test.alt}}">
-				<span class="adv-popup-block__title">{{test.description}}</span>
-				<p class="adv-popup-block__description">{{test.longdescr}}</p>
-				<a class="mfp-close cloce-default"></a>
-			</div>
-			{% endfor %}
-		
+{% for test in tests.list2 %}
+<div id="{{test.id}}" class="adv-popup-block white-popup-block mfp-hide">
+	<img class="adv-popup-block__img" width="200" height="200" src="{{test.img}}" alt="{{test.alt}}">
+	<span class="adv-popup-block__title">{{test.description}}</span>
+	<p class="adv-popup-block__description">{{test.longdescr}}</p>
+	<a class="mfp-close cloce-default"></a>
+</div>
+{% endfor %}

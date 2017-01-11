@@ -26,7 +26,55 @@ $(document).ready(function(){
 	$('#tabs').tabs();
 	/*end scrollto*/
 
+	/*begin map*/
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: 55.524963, lng: 37.478325},
+			zoom: 15,
+			scrollwheel: false
+		});
+		setMarkers(map, places);
+	}
+	var places = [
+	['Частная школа', 55.522763, 37.476325, 'img/school-marker.png'],
+	['Аптека', 55.525763, 37.468325, 'img/medical-marker.png'],
+	['Спортзал', 55.524763, 37.473325, 'img/dumbbell-marker.png'],
+	['Квартал таунхаусов Кронбург', 55.524963, 37.478325, 'img/logo-marker.png']
 
+	];
+	function setMarkers(map) {
+		var marker, i;
+		for (i = 0; i < places.length; i++) {
+			var description = places[i][0]
+			var lat = places[i][1]
+			var long = places[i][2]
+			var img =  places[i][3]
+			var latshort = places[i][1].toFixed(5);
+			var longshort = places[i][2].toFixed(5);
+			latlngset = new google.maps.LatLng(lat, long);
+			marker = new google.maps.Marker({
+				position: latlngset,
+				map: map,
+				icon: img
+			});
+
+			map.setCenter(marker.getPosition());
+
+			var content = "<div class='map-marker-wrapper'><p class='map-marker-descr'>" +description +"</p>" + "<span class='map-marker-coord'>" + latshort + ", " + longshort  + "</span></div>";
+
+			var infowindow = new google.maps.InfoWindow();
+
+			google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+				return function() {
+					infowindow.setContent(content);
+					infowindow.open(map,marker);
+				};
+			})(marker,content,infowindow)); 
+		}
+	}
+	/*end map*/
+	
 	/*begin advantages popup*/
 	$('.adv-popup-link').magnificPopup({
 		type: 'inline',
