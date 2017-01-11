@@ -27,8 +27,6 @@ $(document).ready(function(){
 	/*end scrollto*/
 
 
-
-
 	/*begin advantages popup*/
 	$('.adv-popup-link').magnificPopup({
 		type: 'inline',
@@ -74,18 +72,8 @@ $(document).ready(function(){
 		});
 
 		/*end header callback*/
-	}else{
-
-
-
-		
-
-
-
-
-	};
+	}else{};
 
 
 
 });
-
