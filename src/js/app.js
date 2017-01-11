@@ -26,9 +26,8 @@ $(document).ready(function(){
 	$('#tabs').tabs();
 	/*end scrollto*/
 
-	/*begin wow*/
 
-	/*end wow*/
+
 
 	/*begin advantages popup*/
 	$('.adv-popup-link').magnificPopup({
@@ -88,5 +87,5 @@ $(document).ready(function(){
 
 
 
-
 });
+
