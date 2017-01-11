@@ -4134,6 +4134,37 @@ html.magnifying > body {
   height: 344px;
 }
 
+.map-marker-wrapper {
+  width: 300px;
+  height: 130px;
+  position: relative;
+}
+
+.map-marker-descr {
+  color: #181818;
+  font: 400 16px/30px "Open Sans";
+}
+
+.map-marker-coord {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.map-marker-coord:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -10px;
+  background-image: url("../img/sprite.png");
+  width: 9px;
+  height: 13px;
+  background-position: -470px -158px;
+}
+
 .about-builder__h2 {
   color: #21afa4;
   text-shadow: 0px 0px 2px #21afa4;

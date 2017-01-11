@@ -3,3 +3,21 @@
 	height: 344px
 	+r(768)
 		display: none
+.map-marker-wrapper
+		width: 300px
+		height: 130px
+		position: relative
+.map-marker-descr
+	color: #181818
+	font: $simple-text-style
+.map-marker-coord
+	position: absolute
+	bottom: 0
+	left: 10px
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: -10px
+		+s(map-marker-coord)
