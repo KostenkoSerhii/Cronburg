@@ -34,56 +34,33 @@
 			margin-right: 0px
 			+r(768)
 				margin: 12px
-	a
-		color: white
-		font: 600 33px/60px $font-family
-		width: 68px
-		height: 68px
-		padding: 3px
-		display: block
-		border-radius: 50%
-		text-align: center
-		position: relative
-		background: red
-		&:before
-			content: ''
-			+coverdiv
-			width: 80px
-			height: 80px
-			+vcenter
-			border: 0px solid transparent
+		a
+			color: white
+			font: 600 33px/60px $font-family
+			width: 68px
+			height: 68px
+			padding: 3px
+			display: block
 			border-radius: 50%
-			transition: all .3s
-		&.tabs-1
-			background: $quarter-plan-tab1-color
-			&:hover
-				&:before
-					border: 4px solid $quarter-plan-tab1-color
-		&.tabs-2
-			background: $quarter-plan-tab2-color
-			&:hover
-				&:before
-					border: 4px solid $quarter-plan-tab2-color
-		&.tabs-3
-			background: $quarter-plan-tab3-color
-			&:hover
-				&:before
-					border: 4px solid $quarter-plan-tab3-color
-		&.tabs-4
-			background: $quarter-plan-tab4-color
-			&:hover
-				&:before
-					border: 4px solid $quarter-plan-tab4-color
-		&.tabs-5
-			background: $quarter-plan-tab5-color
-			&:hover
-				&:before
-					border: 4px solid $quarter-plan-tab5-color
-		&.tabs-6
-			background: $quarter-plan-tab6-color
-			&:hover
-				&:before
-					border: 4px solid $quarter-plan-tab6-color
+			text-align: center
+			position: relative
+			background: red
+			&:before
+				content: ''
+				+coverdiv
+				width: 80px
+				height: 80px
+				+vcenter
+				border: 0px solid transparent
+				border-radius: 50%
+				transition: all .3s
+		@each $status, $color in $tab-cols
+  		&:nth-of-type(#{$status})
+  			a
+						background: $color
+						&:hover
+							&:before
+								border: 2px + 2px solid $color - 25%
 .quarter-plan-tabs
 	.tab-item
 		background: white
@@ -99,6 +76,10 @@
 		justify-content: center
 		color: #000
 		font: 400 14px $font-family
+		@each $status, $color in $tab-cols
+  		&:nth-of-type(#{$status})
+  			.tab-item__description
+  				background: $color 
 		+r(1100)
 			justify-content: space-around
 		+r(768)
@@ -107,24 +88,7 @@
 			font-weight: 600
 		p
 			margin: 8px 0
-		&:nth-of-type(1)
-			.tab-item__description
-				background: $quarter-plan-tab1-color
-		&:nth-of-type(2)
-			.tab-item__description
-				background: $quarter-plan-tab2-color
-		&:nth-of-type(3)
-			.tab-item__description
-				background: $quarter-plan-tab3-color
-		&:nth-of-type(4)
-			.tab-item__description
-				background: $quarter-plan-tab4-color
-		&:nth-of-type(5)
-			.tab-item__description
-				background: $quarter-plan-tab5-color
-		&:nth-of-type(6)
-			.tab-item__description
-				background: $quarter-plan-tab6-color
+
 	.tab-item__description
 		position: absolute
 		text-align: center
