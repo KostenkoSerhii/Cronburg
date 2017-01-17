@@ -37,10 +37,6 @@
 	text-align: center
 	background: #f5f5f5
 .builder-description-wrapper
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	text-align: left
 	+r(1100)
@@ -88,14 +84,14 @@
 				text-transform: uppercase
 				+r(768)
 					font-size: 20px
-	.builder-description-middle
+	.desc__second-block
 		text-align: center
 		color: #222
 		font: 400 16px/30px $font-family
 		text-transform: none
 		+r(768)
 			margin-top: 20px
-		p.builder-description-middle__p
+		p.second-block__p
 			margin: 25px 0
 		span
 			color: #222
@@ -109,7 +105,7 @@
 			+r(768)
 				display: block
 
-.builder-description__right
+.desc__third-block
 	text-align: right
 	p:last-of-type
 		font-size: 16px
@@ -118,7 +114,7 @@
 		+r(768)
 			font-size: 14px
 
-.builder-description__left, .builder-description__right
+.desc__first-block, .desc__third-block
 	padding-top: 10px
 	+r(768)
 		text-align: center

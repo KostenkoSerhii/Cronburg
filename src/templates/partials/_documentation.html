@@ -3,10 +3,10 @@
 	<!--begin container-->
 	<div class="container">
 		<h2 class="documentation__h2">Документация</h2>
-		<div class="documentation-wrapper-list">
+		<div class="documentation-list">
 			{% import "data/data.html" as tests %}
 			{% for test in tests.docs %}
-			<div class="documentation__item 		{% if test.pdf %}download-pdf{% else %}download-jpg{% endif %}"><a  href="#" download>{{test.content}}</a>
+			<div class="documentation__item doc-block		{% if test.pdf %}download-pdf{% else %}download-jpg{% endif %}"><a  href="#" download>{{test.content}}</a>
 			</div>
 			{% endfor %}
 		</div>

@@ -2,10 +2,6 @@
 	padding-top: 36px
 	padding-bottom: 98px
 	.container:first-of-type
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
 		display: flex
 .quarter-plan__h2
 	width: 150px
@@ -31,21 +27,18 @@
 			display: none
 		&:first-of-type
 			margin-bottom: 27px
-			&:before
-				content: '1'
-		&:before
-			text-align: center
-			content: '2'
+		span
 			position: absolute
 			left: 0
-			top: 50%
-			transform: translateY(-50%)
 			color: white
-			font: 700 24px $font-family
-			background: #375272
+			font: 700 24px/40px $font-family
 			width: 40px
 			height: 40px
 			border-radius: 50%
+			display: inline-block
+			background: #375272
+			text-align: center
+			top: 9px
 .quarter-plan__map
 	position: relative
 	width: 644px
