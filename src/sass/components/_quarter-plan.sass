@@ -1,8 +1,7 @@
 .quarter-plan
 	padding-top: 36px
 	padding-bottom: 98px
-	.container:first-of-type
-		display: flex
+	.container:first-of-type	
 .quarter-plan__h2
 	width: 150px
 	margin-top: 57px
@@ -14,10 +13,11 @@
 		text-align: center
 	+r(768)
 		margin-bottom: 20px
-		
 .quarter-plan__instruction
 	+r(1100)
-		flex-basis: 100%
+		display: block
+		width: 100%	
+		margin-right: 0
 	p
 		color: #222
 		font: 400 16px/24px $font-family
@@ -40,8 +40,9 @@
 			text-align: center
 			top: 9px
 .quarter-plan__map
+	display: inline-block
 	position: relative
-	width: 644px
+	width: 600px
 	height: 429px
 	z-index: 1
 	+r(1100)

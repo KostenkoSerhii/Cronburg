@@ -3781,12 +3781,12 @@ function sayHello() {
 /*sayHello();*/
 $(document).ready(function () {
   /*begin  scrollto*/
-  $(".header-menu__item a").click(function () {
+  $(".js-scroll").click(function () {
     var a = $(this).attr("href");
     return $.scrollTo(a, 500), !1;
   });
 
-  $(".callback-block__close").on("click", function (e) {
+  $(".js-callback-close").on("click", function (e) {
     e.preventDefault();
     $(".callback-block").slideUp(200);
   });
@@ -3797,7 +3797,7 @@ $(document).ready(function () {
   /*end scrollto*/
 
   /*begin advantages popup*/
-  $('.adv-popup-link').magnificPopup({
+  $('.js-popup').magnificPopup({
     type: 'inline',
     closeOnContentClick: true,
     removalDelay: 400,
@@ -3805,28 +3805,20 @@ $(document).ready(function () {
   });
   /*end advantages popup*/
 
-  /*begin townhouse-galery*/
-  /*	$('.townhouse-galery').magnificPopup({
-  		type: 'inline',
-  		gallery: {
-  			enabled: true
-  		}
-  	});*/
-  /*end townhouse-galery*/
   var doc_width = $(window).width();
   if (doc_width <= "768") {
-    var builderDescriptionRight = $(".builder-description__right").detach();
-    $(".builder-description-middle").before(builderDescriptionRight);
+    /*		var builderDescriptionRight = $(".builder-description__right").detach();
+    		$(".builder-description-middle").before(builderDescriptionRight);*/
 
-    $(".header-menu-btn").on("click", function () {
+    $(".js-header-menu-btn").on("click", function () {
       $(".header-menu").slideToggle();
     });
 
-    $(".header-callback").on("click", function () {
+    $(".js-header-callback").on("click", function () {
       $(".header-menu").hide();
     });
 
-    $(".header-callback__img").on("click", function (e) {
+    $(".js-header-callback__img").on("click", function (e) {
       e.preventDefault();
       $(".callback-block").slideDown(200);
     });

@@ -111,17 +111,12 @@ html {
 }
 
 .col, .col-last {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
-  -webkit-flex-basis: 280px;
-  -ms-flex-preferred-size: 280px;
-  flex-basis: 280px;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 40px;
+  width: 280px;
+  margin-right: 35px;
+  text-align: left;
 }
 
 .col-last {
@@ -3599,18 +3594,7 @@ h1 span {
 }
 
 .what-is-townhouse {
-  padding: 80px 0 90px 0px;
-  padding: 50px 0 60px 0px;
-  overflow: hidden;
-}
-
-.what-is-townhouse .container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  padding: 70px 0 90px 0px;
 }
 
 .what-is-townhouse .container:before {
@@ -3625,13 +3609,18 @@ h1 span {
   z-index: 0;
 }
 
+.what-is-townhouse .main-desc-wrapper {
+  text-align: justify;
+}
+
+.what-is-townhouse .left-slider-disc {
+  margin-right: 63px;
+}
+
 .part-of-description {
   color: #222;
   font: 400 16px/30px "Open Sans";
-}
-
-.part-of-description:nth-of-type(1) {
-  margin-right: 65px;
+  vertical-align: top;
 }
 
 .what-is-townhouse__h2 {
@@ -3647,7 +3636,7 @@ h1 span {
 .townhouse__galery {
   position: absolute;
   right: -15px;
-  top: 40%;
+  top: 44%;
   color: #375272;
   font: 400 18px;
   font-family: "Open Sans";
@@ -3664,8 +3653,9 @@ h1 span {
 
 .townhouse__slider-container {
   max-width: 560px;
-  margin-bottom: 80px;
+  margin-bottom: 65px;
   position: relative;
+  display: inline-block;
 }
 
 .townhouse__slider-container .townhouse-slider__img {
@@ -3744,59 +3734,43 @@ h1 span {
   text-align: center;
 }
 
-.advantages-image-block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.advantages__image-block {
   margin-top: 45px;
+  text-align: center;
 }
 
-.advantages-image-block .image-block__item {
-  -webkit-flex-basis: 280px;
-  -ms-flex-preferred-size: 280px;
-  flex-basis: 280px;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+.advantages__image-block .image-block__item {
+  width: 280px;
   text-align: center;
   margin-bottom: 36px;
+  display: inline-block;
 }
 
-.advantages-image-block .image-block__item a {
+.advantages__image-block .image-block__item:nth-of-type(3n+2) {
+  margin: 0 30px 36px;
+}
+
+.advantages__image-block .image-block__item a {
   display: inline-block;
   margin-bottom: 5px;
   cursor: pointer;
-}
-
-.advantages-image-block .image-block__item img {
+  width: 200px;
+  height: 200px;
+  background-position: 50% 50%;
+  background-size: cover;
   border: 2px solid #fff;
   border-radius: 50%;
   transition: all .3s;
   position: relative;
 }
 
-.advantages-image-block .image-block__item img:hover {
+.advantages__image-block .image-block__item a:hover {
   border: 10px solid #fff;
 }
 
-.advantages-image-block .image-block__item span {
+.advantages__image-block .image-block__item span {
   font: 600 20px "Open Sans";
   color: white;
-}
-
-.advantages-description .wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .advantages-description .wrapper p, .advantages-description .wrapper strong {
@@ -3820,12 +3794,6 @@ h1 span {
 .quarter-plan {
   padding-top: 36px;
   padding-bottom: 98px;
-}
-
-.quarter-plan .container:first-of-type {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .quarter-plan__h2 {
@@ -3860,8 +3828,9 @@ h1 span {
 }
 
 .quarter-plan__map {
+  display: inline-block;
   position: relative;
-  width: 644px;
+  width: 600px;
   height: 429px;
   z-index: 1;
 }
@@ -3919,10 +3888,6 @@ html.magnifying > body {
 .tabs-nav li {
   display: inline-block;
   margin-right: 7px;
-}
-
-.tabs-nav li:last-of-type {
-  margin-right: 0px;
 }
 
 .tabs-nav li a {
@@ -4007,17 +3972,12 @@ html.magnifying > body {
 }
 
 .quarter-plan-tabs .tab-item {
+  text-align: center;
   background: white;
   border: 2px solid #6db848;
   box-shadow: 3.5px 3.5px 5px rgba(25, 24, 20, 0.25);
   padding: 50px 0px 40px;
   position: relative;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   color: #000;
   font: 400 14px "Open Sans";
 }
@@ -4071,33 +4031,23 @@ html.magnifying > body {
 }
 
 .tab-item__block {
-  -webkit-flex-basis: 165px;
-  -ms-flex-preferred-size: 165px;
-  flex-basis: 165px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 165px;
 }
 
-.tab-block-first, .tab-block-third {
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.tab-block-second {
+.tab-item__block:nth-of-type(3) {
   margin: 0 130px;
 }
 
-.tab-block__img-wrapper {
+.tab-block__img {
   text-align: center;
   margin-bottom: 5px;
-  height: 210px;
-}
-
-.tab-block__img-wrapper img {
-  max-height: 210px;
-  width: auto;
+  height: 220px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 165px;
 }
 
 .download-plan {
@@ -4198,9 +4148,6 @@ html.magnifying > body {
 }
 
 .builder-description-wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   text-align: left;
 }
 
@@ -4285,13 +4232,6 @@ html.magnifying > body {
   line-height: 24px;
 }
 
-.contacts .container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
 .contacts a {
   color: #fff;
 }
@@ -4310,11 +4250,14 @@ html.magnifying > body {
 }
 
 .callback-questions {
+  text-align: center;
   width: 320px;
   padding: 27px 35px 25px;
   background: #aac8ea;
   position: absolute;
   right: 0px;
+  z-index: 11;
+  top: 0;
 }
 
 .callback-questions p {
@@ -4625,12 +4568,18 @@ html.magnifying > body {
   }
 }
 
+@media only screen and (max-width: 1200px){
+  .what-is-townhouse{
+    overflow: hidden;
+  }
+}
+
 @media only screen and (max-width: 1100px){
   .col, .col-last{
-    margin-right: 0px;
-    -webkit-flex-basis: 200px;
-    -ms-flex-preferred-size: 200px;
-    flex-basis: 200px;
+    width: 200px;
+  }
+  .col{
+    margin-right: 50px;
   }
   h2{
     font: 600 22px/28px "Open Sans";
@@ -4690,10 +4639,8 @@ html.magnifying > body {
   .other-progect-link{
     top: 100px;
   }
-  .what-is-townhouse .container{
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+  .what-is-townhouse{
+    padding: 50px 0 60px 0px;
   }
   .what-is-townhouse .container:before{
     left: 50%;
@@ -4703,9 +4650,6 @@ html.magnifying > body {
   }
   .part-of-description{
     font: 400 14px/24px "Open Sans";
-  }
-  .part-of-description:nth-of-type(1){
-    margin-right: 0px;
   }
   .what-is-townhouse__h2{
     margin-bottom: 20px;
@@ -4724,10 +4668,8 @@ html.magnifying > body {
     width: 440px;
     height: 440px;
   }
-  .advantages-description .wrapper{
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+  .advantages__image-block .image-block__item:nth-of-type(3n+2){
+    margin: 0 0 36px;
   }
   .quarter-plan__h2{
     width: 100%;
@@ -4736,9 +4678,9 @@ html.magnifying > body {
     text-align: center;
   }
   .quarter-plan__instruction{
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    display: block;
+    width: 100%;
+    margin-right: 0;
   }
   .quarter-plan__instruction p{
     display: none;
@@ -4748,40 +4690,21 @@ html.magnifying > body {
   }
   .tabs-nav{
     padding: 0;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     position: relative;
     top: 0;
     right: 0;
     width: 100%;
     height: auto;
     margin-bottom: 50px;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
   .tabs-nav li{
     margin: 0 20px;
   }
-  .quarter-plan-tabs .tab-item{
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  .tab-block-second{
-    margin: 0;
+  .tab-item__block:nth-of-type(3){
+    margin: 0 50px;
   }
   .about-builder__h2 + p{
     font-size: 18px;
-  }
-  .builder-description-wrapper{
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
   }
   .builder-description-wrapper .col, .builder-description-wrapper .col-last{
     font: 400 18px/24px "Open Sans";
@@ -4806,7 +4729,7 @@ html.magnifying > body {
     margin-right: 20px;
   }
   .callback-questions{
-    width: 300px;
+    width: 280px;
   }
   .callback-questions p{
     font-size: 24px;
@@ -4851,10 +4774,11 @@ html.magnifying > body {
 
 @media only screen and (max-width: 768px){
   .col, .col-last{
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    width: 100%;
     margin-bottom: 20px;
+  }
+  .col{
+    margin-right: 0;
   }
   h2{
     font: 600 16px/20px "Open Sans";
@@ -4950,11 +4874,6 @@ html.magnifying > body {
   .other-progect-link{
     display: none;
   }
-  .what-is-townhouse .container{
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
   .what-is-townhouse .container:before{
     display: none;
   }
@@ -4974,6 +4893,7 @@ html.magnifying > body {
     display: none;
   }
   .townhouse__slider-container{
+    display: block;
     width: 280px;
     height: 280px;
     margin: 0 auto;
@@ -4986,25 +4906,12 @@ html.magnifying > body {
     width: 70px;
     height: 70px;
   }
-  .advantages-image-block{
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-  .advantages-image-block .image-block__item{
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+  .advantages__image-block .image-block__item{
     text-align: center;
   }
-  .advantages-image-block .image-block__item span{
+  .advantages__image-block .image-block__item span{
     display: block;
     font-size: 16px;
-  }
-  .advantages-description .wrapper{
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
   .advantages-description .wrapper p, .advantages-description .wrapper strong{
     margin-bottom: 10px;
@@ -5026,23 +4933,22 @@ html.magnifying > body {
     margin: 12px;
   }
   .quarter-plan-tabs .tab-item{
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     padding: 0 5px;
+    padding-top: 20px;
   }
   .quarter-plan-tabs .tab-item__description{
     width: 100%;
   }
   .tab-item__block{
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }
-  .tab-block__img-wrapper{
-    height: auto;
+  .tab-item__block:nth-of-type(3){
+    margin: 0;
+  }
+  .tab-block__img{
+    margin: 0 auto 5px;
   }
   .download-plan{
     position: relative;
@@ -5061,14 +4967,6 @@ html.magnifying > body {
   .about-builder__h2 + p{
     font-size: 14px;
     margin-bottom: 10px;
-  }
-  .builder-description-wrapper{
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
   .builder-description-wrapper .col, .builder-description-wrapper .col-last{
     font: 400 14px/24px "Open Sans";
@@ -5112,19 +5010,15 @@ html.magnifying > body {
   .contacts .col:first-of-type{
     margin-right: 0px;
   }
-  .contacts .container{
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  .contacts .col{
+    text-align: center;
   }
   .contacts p{
     margin-bottom: 10px;
   }
   .callback-questions{
     position: relative;
+    margin: 0 auto;
   }
   .callback-block{
     width: 100%;

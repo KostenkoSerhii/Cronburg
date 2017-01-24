@@ -10,15 +10,12 @@
 	text-align: center
 	+r(1100)
 		padding: 0
-		display: flex
 		position: relative
 		top: 0
 		right: 0
 		width: 100%
 		height: auto
 		margin-bottom: 50px
-		flex-wrap: wrap
-		justify-content: center
 	li
 		display: inline-block
 		margin-right: 7px
@@ -27,7 +24,6 @@
 		+r(768)
 			margin: 12px
 		&:last-of-type
-			margin-right: 0px
 			+r(768)
 				margin: 12px
 		a
@@ -59,24 +55,21 @@
 								border: 2px + 2px solid $color - 25%
 .quarter-plan-tabs
 	.tab-item
+		text-align: center
 		background: white
 		border: 2px solid #6db848
 		box-shadow: 3.5px 3.5px 5px rgba(25, 24, 20, 0.25)
 		padding: 50px 0px 40px
 		position: relative
-		display: flex
-		justify-content: center
 		color: #000
 		font: 400 14px $font-family
 		@each $status, $color in $tab-cols
   		&:nth-of-type(#{$status})
   			.tab-item__description
   				background: $color 
-		+r(1100)
-			justify-content: space-around
 		+r(768)
-			flex-wrap: wrap
 			padding: 0 5px
+			padding-top: 20px
 		h3
 			font-weight: 600
 		p
@@ -96,27 +89,29 @@
 			font-weight: 600
 			text-transform: none
 .tab-item__block
-	flex-basis: 165px
+	text-align: left
+	display: inline-block
+	vertical-align: top
+	width: 165px
 	+r(768)
-		flex-basis: 100%
+		width: 100%
 		text-align: center
 		margin-bottom: 20px	
-.tab-block-first, .tab-block-third
-	flex-grow: 0
-	flex-shrink: 0
-.tab-block-second
-	margin: 0 130px
-	+r(1100)
-		margin: 0
-.tab-block__img-wrapper
+	&:nth-of-type(3)
+		margin: 0 130px
+		+r(1100)
+			margin: 0 50px
+		+r(768)
+			margin: 0
+.tab-block__img
 	text-align: center
 	margin-bottom: 5px
-	height: 210px
+	height: 220px
+	background-position: 50% 0
+	background-repeat: no-repeat
+	width: 165px
 	+r(768)
-		height: auto
-	img
-		max-height: 210px
-		width: auto
+		margin: 0 auto 5px
 .download-plan
 	text-decoration: underline
 	position: absolute;

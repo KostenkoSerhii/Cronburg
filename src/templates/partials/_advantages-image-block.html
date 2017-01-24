@@ -1,10 +1,9 @@
 <!--begin advantages-image-block-->
-<div class="advantages-image-block image-block">
+<div class="advantages__image-block image-block">
 	{% import "data/data.html" as tests %}
 	{% for test in tests.list2 %}
 	<div class="image-block__item">
-		<a href="{{test.href}}" class="adv-popup-link">	
-			<img width="200" height="200" src="{{test.img}}" alt="{{test.alt}}">
+		<a href="{{test.href}}" class="adv-popup-link js-popup" style="background-image: url({{test.img}});">	
 		</a>
 		<span>{{test.description}}</span>
 	</div>

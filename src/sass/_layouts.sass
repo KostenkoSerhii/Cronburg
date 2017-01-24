@@ -11,16 +11,21 @@
 		width: 1000px
 		padding:  0 40px
 .col, .col-last
+	display: inline-block
+	vertical-align: top
 	position: relative
-	flex-basis: 280px
-	flex-grow: 0
-	flex-shrink: 0
-	margin-right: 40px
+	width: 280px
+	margin-right: 35px
+	text-align: left
 	+r(1100)
-		margin-right: 0px
-		flex-basis: 200px
+		width: 200px
 	+r(768)
-		flex-basis: 100%
+		width: 100%
 		margin-bottom: 20px
+.col
+	+r(1100)
+		margin-right: 50px
+	+r(768)
+		margin-right: 0
 .col-last
-	margin-right: 0
+	margin-right: 0 

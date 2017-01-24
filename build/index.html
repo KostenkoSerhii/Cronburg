@@ -16,25 +16,25 @@
       <!--begin container-->
       <div class="container">
         <a class="header-logo" href="#"> <img src="img/logo.png" alt="Logo"> </a>
-        <div class='header-menu-btn'></div>
+        <div class='header-menu-btn js-header-menu-btn'></div>
         <ul class="header-menu">
-          <li class="header-menu__item"><a href="#what-is-townhouse">Что такое Таунхаус?</a></li>
-          <li class="header-menu__item"><a href="#quarter-plan">План Квартала</a></li>
-          <li class="header-menu__item"><a href="#advantages">Преимущества</a></li>
-          <li class="header-menu__item"><a href="#">Таунхаусы</a></li>
-          <li class="header-menu__item"><a href="#about-builde">О застройщике</a></li>
-          <li class="header-menu__item"><a href="#">Инфраструктура</a></li>
-          <li class="header-menu__item"><a href="#contacts">Контакты</a></li>
-        </ul> <a class="header-contact-phone contact-phone" href="tel:+74954807787">+7 (495) 480-77-87</a> <a class="callback header-callback">
+          <li class="header-menu__item"><a class="js-scroll" href="#what-is-townhouse">Что такое Таунхаус?</a></li>
+          <li class="header-menu__item"><a class="js-scroll" href="#quarter-plan">План Квартала</a></li>
+          <li class="header-menu__item"><a class="js-scroll" href="#advantages">Преимущества</a></li>
+          <li class="header-menu__item"><a class="js-scroll" href="#">Таунхаусы</a></li>
+          <li class="header-menu__item"><a class="js-scroll" href="#about-builde">О застройщике</a></li>
+          <li class="header-menu__item"><a class="js-scroll" href="#">Инфраструктура</a></li>
+          <li class="header-menu__item"><a class="js-scroll" href="#contacts">Контакты</a></li>
+        </ul> <a class="header-contact-phone contact-phone" href="tel:+74954807787">+7 (495) 480-77-87</a> <a class="callback header-callback js-header-callback">
 			обратный звонок
 		</a>
-        <div class="header-callback__img"> </div>
+        <div class="header-callback__img js-header-callback__img"> </div>
         <div class="callback-block"> <a class="callback-block__phone" href="tel:+74954807787">+7 (495) 480-77-87
 	</a>
           <p class="callback-block__name">обратный звонок</p>
           <div class="img-block"></div>
           <form> <input class="input-default" type="text" name="name" placeholder="Имя"> <input class="input-default" type="text" name="phone" placeholder="Ваш номер телефона"> <button class="button-default" type="submit">отправить</button> </form>
-          <a class="callback-block__close cloce-default"></a>
+          <a class="callback-block__close cloce-default js-callback-close"></a>
         </div>
       </div>
       <!--end container-->
@@ -59,7 +59,7 @@
       <div class="what-is-townhouse" id="what-is-townhouse">
         <!--begin container-->
         <div class="container">
-          <div class="part-of-description col">
+          <div class="part-of-description col part-of-description left-slider-disc">
             <h2 class="what-is-townhouse__h2"> Что такое Таунхаус? </h2> Таунхаус (англ.townhouse) — малоэтажный жилой дом на несколько многоуровневых квартир, с изолированными входами (то есть без общего подъезда), Таунхаусы получили распространение в пригородах Москвы благодаря множествам
             преимуществ. </div>
           <div class="townhouse__slider-container slider-container">
@@ -71,11 +71,13 @@
               <div><img class="townhouse-slider__img" src="img/slide-img.png" alt="alt"></div>
             </div>
           </div> <a href="#galery-townhouse" class="townhouse__galery">Галерея</a>
-          <div class="part-of-description col">
-            <h2 class="what-is-townhouse__h2 what-is-townhouse__h2-mod"> Кронбург –<br> это ГАРМОНИЯ </h2> Кронбург – это настоящий европейский квартал таунхаусов с уютными улочками, красивыми бульварами, тенистыми скверами, развитой социальной и бытовой инфраструктурой. Здесь вас ждут уют, тишина и спокойствие.
-            </div>
-          <div class="part-of-description col"> Наш проект расположен в одном из наиболее благоприятных дляпроживания районе – юго-западном. Именно здесь вы сможете ощутить свежесть сосновых лесов и прозрачность рек. </div>
-          <div class="part-of-description col-last"> Квартал таунхаусов Кронбург входит в состав градостроительного мега-проекта «А101», в рамках которого ведется комплексное освоение земель вдоль Калужского шоссе. </div>
+          <div class="main-desc-wrapper">
+            <div class="part-of-description col">
+              <h2 class="what-is-townhouse__h2 what-is-townhouse__h2-mod"> Кронбург –<br> это ГАРМОНИЯ </h2> Кронбург – это настоящий европейский квартал таунхаусов с уютными улочками, красивыми бульварами, тенистыми скверами, развитой социальной и бытовой инфраструктурой. Здесь вас ждут уют, тишина и спокойствие.
+              </div>
+            <div class="part-of-description col"> Наш проект расположен в одном из наиболее благоприятных дляпроживания районе – юго-западном. Именно здесь вы сможете ощутить свежесть сосновых лесов и прозрачность рек. </div>
+            <div class="part-of-description col-last"> Квартал таунхаусов Кронбург входит в состав градостроительного мега-проекта «А101», в рамках которого ведется комплексное освоение земель вдоль Калужского шоссе. </div>
+          </div>
         </div>
         <!--end container-->
       </div>
@@ -86,19 +88,19 @@
         <div class="container">
           <h2 class="advantages__h2">Преимущества КронбургА</h2>
           <!--begin advantages-image-block-->
-          <div class="advantages-image-block image-block">
+          <div class="advantages__image-block image-block">
             <div class="image-block__item">
-              <a href="#adv1" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img1.png" alt="alt"> </a> <span>Авторская архитектура</span> </div>
+              <a href="#adv1" class="adv-popup-link js-popup" style="background-image: url(img/adv-img1.png);"> </a> <span>Авторская архитектура</span> </div>
             <div class="image-block__item">
-              <a href="#adv2" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img2.png" alt="alt"> </a> <span>Удачное расположение</span> </div>
+              <a href="#adv2" class="adv-popup-link js-popup" style="background-image: url(img/adv-img2.png);"> </a> <span>Удачное расположение</span> </div>
             <div class="image-block__item">
-              <a href="#adv3" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img3.png" alt="alt"> </a> <span>Парковка</span> </div>
+              <a href="#adv3" class="adv-popup-link js-popup" style="background-image: url(img/adv-img3.png);"> </a> <span>Парковка</span> </div>
             <div class="image-block__item">
-              <a href="#adv4" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img4.png" alt="alt"> </a> <span>Охраняемая территория</span> </div>
+              <a href="#adv4" class="adv-popup-link js-popup" style="background-image: url(img/adv-img4.png);"> </a> <span>Охраняемая территория</span> </div>
             <div class="image-block__item">
-              <a href="#adv5" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img5.png" alt="alt"> </a> <span>Экология и природа</span> </div>
+              <a href="#adv5" class="adv-popup-link js-popup" style="background-image: url(img/adv-img5.png);"> </a> <span>Экология и природа</span> </div>
             <div class="image-block__item">
-              <a href="#adv6" class="adv-popup-link"> <img width="200" height="200" src="img/adv-img6.png" alt="alt"> </a> <span>Соотношение цены</span> </div>
+              <a href="#adv6" class="adv-popup-link js-popup" style="background-image: url(img/adv-img6.png);"> </a> <span>Соотношение цены</span> </div>
           </div>
           <!--end advantages-image-block-->
         </div>
@@ -115,7 +117,7 @@
 				</strong>
               <p>Эксплуатировать таунхаус проще и дешевле, чем отдельно стоящий дом. </p> <strong>Автономное отопление на территории Квартала.
 				</strong> </div>
-            <div class="col advantages-description__item"> <strong>Автономное отопление на территории Квартала.
+            <div class="col-last advantages-description__item"> <strong>Автономное отопление на территории Квартала.
 				</strong>
               <p> Вся необходимая инфраструктура будет находится на территории Квартала. </p>
             </div>
@@ -151,86 +153,86 @@
             </ul>
             <div id="tabs-1" class="tab-item">
               <div class="tab-item__description"> Таунхаус «A» <span>108,97 м<sup>2</sup></span> </div>
-              <div class="tab-block tab-block-first tab-item__block  ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab1-img.jpg" alt="tab1-img"> </div>
+              <div class="tab-block tab-item__block  ">
+                <div class="tab-block__img" style="background-image: url(img/tab1-img.jpg);"> </div>
                 <h3>I этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>36,24 кв.м</span> </div>
-              <div class="tab-block tab-block-second tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab2-img.jpg" alt="tab2-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab2-img.jpg);"> </div>
                 <h3>II этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>33,22 кв.м</span><br> <span>балкон 0,72 кв.м</span> </div>
-              <div class="tab-block tab-block-third tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab3-img.jpg" alt="tab3-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab3-img.jpg);"> </div>
                 <h3>Мансардный этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>24,10 кв.м</span><br> </div> <a class="download-plan" href="#" download>Скачать планировки таунхауса «A» в PDF</a> </div>
             <div id="tabs-2" class="tab-item">
               <div class="tab-item__description"> Таунхаус «B» <span>108,97 м<sup>2</sup></span> </div>
-              <div class="tab-block tab-block-first tab-item__block  ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab1-img.jpg" alt="tab1-img"> </div>
+              <div class="tab-block tab-item__block  ">
+                <div class="tab-block__img" style="background-image: url(img/tab1-img.jpg);"> </div>
                 <h3>I этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>36,24 кв.м</span> </div>
-              <div class="tab-block tab-block-second tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab2-img.jpg" alt="tab2-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab2-img.jpg);"> </div>
                 <h3>II этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>33,22 кв.м</span><br> <span>балкон 0,72 кв.м</span> </div>
-              <div class="tab-block tab-block-third tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab3-img.jpg" alt="tab3-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab3-img.jpg);"> </div>
                 <h3>Мансардный этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>24,10 кв.м</span><br> </div> <a class="download-plan" href="#" download>Скачать планировки таунхауса «B» в PDF</a> </div>
             <div id="tabs-3" class="tab-item">
               <div class="tab-item__description"> Таунхаус «C» <span>108,97 м<sup>2</sup></span> </div>
-              <div class="tab-block tab-block-first tab-item__block  ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab1-img.jpg" alt="tab1-img"> </div>
+              <div class="tab-block tab-item__block  ">
+                <div class="tab-block__img" style="background-image: url(img/tab1-img.jpg);"> </div>
                 <h3>I этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>36,24 кв.м</span> </div>
-              <div class="tab-block tab-block-second tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab2-img.jpg" alt="tab2-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab2-img.jpg);"> </div>
                 <h3>II этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>33,22 кв.м</span><br> <span>балкон 0,72 кв.м</span> </div>
-              <div class="tab-block tab-block-third tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab3-img.jpg" alt="tab3-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab3-img.jpg);"> </div>
                 <h3>Мансардный этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>24,10 кв.м</span><br> </div> <a class="download-plan" href="#" download>Скачать планировки таунхауса «C» в PDF</a> </div>
             <div id="tabs-4" class="tab-item">
               <div class="tab-item__description"> Таунхаус «D» <span>108,97 м<sup>2</sup></span> </div>
-              <div class="tab-block tab-block-first tab-item__block  ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab1-img.jpg" alt="tab1-img"> </div>
+              <div class="tab-block tab-item__block  ">
+                <div class="tab-block__img" style="background-image: url(img/tab1-img.jpg);"> </div>
                 <h3>I этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>36,24 кв.м</span> </div>
-              <div class="tab-block tab-block-second tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab2-img.jpg" alt="tab2-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab2-img.jpg);"> </div>
                 <h3>II этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>33,22 кв.м</span><br> <span>балкон 0,72 кв.м</span> </div>
-              <div class="tab-block tab-block-third tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab3-img.jpg" alt="tab3-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab3-img.jpg);"> </div>
                 <h3>Мансардный этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>24,10 кв.м</span><br> </div> <a class="download-plan" href="#" download>Скачать планировки таунхауса «D» в PDF</a> </div>
             <div id="tabs-5" class="tab-item">
               <div class="tab-item__description"> Таунхаус «E» <span>108,97 м<sup>2</sup></span> </div>
-              <div class="tab-block tab-block-first tab-item__block  ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab1-img.jpg" alt="tab1-img"> </div>
+              <div class="tab-block tab-item__block  ">
+                <div class="tab-block__img" style="background-image: url(img/tab1-img.jpg);"> </div>
                 <h3>I этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>36,24 кв.м</span> </div>
-              <div class="tab-block tab-block-second tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab2-img.jpg" alt="tab2-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab2-img.jpg);"> </div>
                 <h3>II этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>33,22 кв.м</span><br> <span>балкон 0,72 кв.м</span> </div>
-              <div class="tab-block tab-block-third tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab3-img.jpg" alt="tab3-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab3-img.jpg);"> </div>
                 <h3>Мансардный этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>24,10 кв.м</span><br> </div> <a class="download-plan" href="#" download>Скачать планировки таунхауса «E» в PDF</a> </div>
             <div id="tabs-6" class="tab-item">
               <div class="tab-item__description"> Таунхаус «F» <span>108,97 м<sup>2</sup></span> </div>
-              <div class="tab-block tab-block-first tab-item__block  ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab1-img.jpg" alt="tab1-img"> </div>
+              <div class="tab-block tab-item__block  ">
+                <div class="tab-block__img" style="background-image: url(img/tab1-img.jpg);"> </div>
                 <h3>I этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>36,24 кв.м</span> </div>
-              <div class="tab-block tab-block-second tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab2-img.jpg" alt="tab2-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab2-img.jpg);"> </div>
                 <h3>II этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>33,22 кв.м</span><br> <span>балкон 0,72 кв.м</span> </div>
-              <div class="tab-block tab-block-third tab-item__block ">
-                <div class="tab-block__img-wrapper"> <img src="img/tab3-img.jpg" alt="tab3-img"> </div>
+              <div class="tab-block  tab-item__block ">
+                <div class="tab-block__img" style="background-image: url(img/tab3-img.jpg);"> </div>
                 <h3>Мансардный этаж</h3>
                 <p>Общая площадь без учета перегородок</p> <span>24,10 кв.м</span><br> </div> <a class="download-plan" href="#" download>Скачать планировки таунхауса «F» в PDF</a> </div>
           </div>

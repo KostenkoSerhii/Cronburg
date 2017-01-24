@@ -19,14 +19,12 @@
 	+r(768)
 		text-align: center
 		padding-top: 40px
-		.col:first-of-type
-			margin-right: 0px
-	.container
-		display: flex
-		position: relative
+	.col:first-of-type
 		+r(768)
-			flex-wrap: wrap
-			justify-content: center
+			margin-right: 0px
+	.col
+		+r(768)
+			text-align: center
 	a
 		color: #fff
 	strong, .custom-color
@@ -39,15 +37,19 @@
 		+r(768)
 			margin-bottom: 10px
 .callback-questions
+	text-align: center
 	width: 320px
 	padding: 27px 35px 25px
 	background: #aac8ea
 	position: absolute
 	right: 0px
+	z-index: 11
+	top: 0
 	+r(1100)
-		width: 300px
+		width: 280px
 	+r(768)
 		position: relative
+		margin: 0 auto
 	p
 		color: #375272
 		font: 600 30px/30px $font-family
