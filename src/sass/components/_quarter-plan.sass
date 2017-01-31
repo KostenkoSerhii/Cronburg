@@ -6,72 +6,72 @@
 	width: 150px
 	margin-top: 57px
 	margin-bottom: 36px
-	+r(1100)
+	+r(1099)
 		width: 100%
 		margin-bottom: 20px
 		margin-top: 0
 		text-align: center
-	+r(768)
+	+r(767)
 		margin-bottom: 20px
-.quarter-plan__instruction
-	+r(1100)
+.instruction
+	+r(1099)
 		display: block
 		width: 100%	
 		margin-right: 0
-	p
-		color: #222
-		font: 400 16px/24px $font-family
-		padding-left: 50px
-		position: relative
-		+r(1100)
-			display: none
-		&:first-of-type
-			margin-bottom: 27px
-		span
-			position: absolute
-			left: 0
-			color: white
-			font: 700 24px/40px $font-family
-			width: 40px
-			height: 40px
-			border-radius: 50%
-			display: inline-block
-			background: #375272
-			text-align: center
-			top: 9px
+.instruction__paragraph
+	color: #222
+	font: 400 16px/1.5em $font-family, sans-serif
+	padding-left: 50px
+	position: relative
+	+r(1099)
+		display: none
+	&:first-of-type
+		margin-bottom: 27px
+	span
+		position: absolute
+		left: 0
+		color: white
+		font: 700 24px/1.65em $font-family, sans-serif
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		display: inline-block
+		background: #375272
+		text-align: center
+		top: 9px
 .quarter-plan__map
 	display: inline-block
 	position: relative
 	width: 600px
 	height: 429px
 	z-index: 1
-	+r(1100)
+	+r(1099)
 		display: none
 html.magnifying > body
 	overflow-x: hidden !important
 .magnify 
 	position: relative
 	display: inline-block
-.magnify .magnify-lens 
-	position: absolute
-	width: 126px
-	height: 126px
-	border-radius: 100%
-	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85) 
-	cursor: none
-	display: none
-	z-index: 100
-.magnify .magnify-lens.loading 
-	background: #333 !important
-	opacity: 0.8
-.magnify .magnify-lens.loading:after 
-	position: absolute
-	top: 45%
-	left: 0
-	width: 100%
-	color: #fff
-	content: 'Loading...'
-	font: italic normal 16px/1 Calibri, sans-serif
-	text-align: center
-	text-shadow: 0 0 2px rgba(51, 51, 51, 0.8)
-	text-transform: none
+	.magnify-lens 
+		position: absolute
+		width: 126px
+		height: 126px
+		border-radius: 100%
+		box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85) 
+		cursor: none
+		display: none
+		z-index: 100
+	.magnify-lens.loading 
+		background: #333 !important
+		opacity: 0.8
+	.magnify-lens.loading:after 
+		position: absolute
+		top: 45%
+		left: 0
+		width: 100%
+		color: #fff
+		content: 'Loading...'
+		font: italic normal 16px/1 Calibri, sans-serif
+		text-align: center
+		text-shadow: 0 0 2px rgba(51, 51, 51, 0.8)
+		text-transform: none

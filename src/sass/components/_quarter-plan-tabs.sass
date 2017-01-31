@@ -8,7 +8,7 @@
 	padding-top: 40px
 	padding-left: 20px
 	text-align: center
-	+r(1100)
+	+r(1099)
 		padding: 0
 		position: relative
 		top: 0
@@ -16,101 +16,100 @@
 		width: 100%
 		height: auto
 		margin-bottom: 50px
-	li
-		display: inline-block
-		margin-right: 7px
-		+r(1100)
-			margin: 0 20px
-		+r(768)
+.tabs-nav__item
+	display: inline-block
+	margin-right: 7px
+	+r(1099)
+		margin: 0 20px
+	+r(767)
+		margin: 12px
+	&:last-of-type
+		+r(767)
 			margin: 12px
-		&:last-of-type
-			+r(768)
-				margin: 12px
-		a
-			color: white
-			font: 600 33px/60px $font-family
-			width: 68px
-			height: 68px
-			padding: 3px
-			display: block
-			border-radius: 50%
-			text-align: center
-			position: relative
-			background: red
-			&:before
-				content: ''
-				+coverdiv
-				width: 80px
-				height: 80px
-				+vcenter
-				border: 0px solid transparent
-				border-radius: 50%
-				transition: all .3s
-		@each $status, $color in $tab-cols
-  		&:nth-of-type(#{$status})
-  			a
-						background: $color
-						&:hover
-							&:before
-								border: 2px + 2px solid $color - 25%
-.quarter-plan-tabs
-	.tab-item
+	a
+		color: white
+		font: 600 33px/1.8em $font-family, sans-serif, sans-serif
+		width: 68px
+		height: 68px
+		padding: 3px
+		display: block
+		border-radius: 50%
 		text-align: center
-		background: white
-		border: 2px solid #6db848
-		box-shadow: 3.5px 3.5px 5px rgba(25, 24, 20, 0.25)
-		padding: 50px 0px 40px
 		position: relative
-		color: #000
-		font: 400 14px $font-family
-		@each $status, $color in $tab-cols
-  		&:nth-of-type(#{$status})
-  			.tab-item__description
-  				background: $color 
-		+r(768)
-			padding: 0 5px
-			padding-top: 20px
-		h3
-			font-weight: 600
-		p
-			margin: 8px 0
-	.tab-item__description
-		position: absolute
-		text-align: center
-		text-transform: uppercase
-		left: 0
-		top: -36px
-		width: 280px
-		color: #fff
-		font: 400 16px/35px $font-family
-		+r(768)
-			width: 100%
-		span
-			font-weight: 600
-			text-transform: none
-.tab-item__block
+		background: red
+		&:before
+			content: ''
+			+coverdiv
+			width: 80px
+			height: 80px
+			+vcenter
+			border: 0px solid transparent
+			border-radius: 50%
+			transition: all .3s
+	@each $status, $color in $tab-cols
+		&:nth-of-type(#{$status})
+			a
+				background: $color
+				&:hover
+					&:before
+						border: 2px + 2px solid $color - 25%
+.tab-item
+	text-align: center
+	background: white
+	border: 2px solid #6db848
+	box-shadow: 3.5px 3.5px 5px rgba(25, 24, 20, 0.25)
+	padding: 50px 0px 40px
+	position: relative
+	color: #000
+	font: 400 14px $font-family, sans-serif
+	@each $status, $color in $tab-cols
+ 		&:nth-of-type(#{$status})
+ 			.tab-item__description
+ 				background: $color 
+	+r(767)
+		padding: 0 5px
+		padding-top: 20px
+	p
+		margin: 8px 0
+.tab-item__description
+	position: absolute
+	text-align: center
+	text-transform: uppercase
+	left: 0
+	top: -36px
+	width: 280px
+	color: #fff
+	font: 400 16px/2.2em $font-family, sans-serif
+	+r(767)
+		width: 100%
+	span
+		font-weight: 600
+		text-transform: none
+.floor
 	text-align: left
 	display: inline-block
 	vertical-align: top
 	width: 165px
-	+r(768)
+	+r(767)
 		width: 100%
 		text-align: center
 		margin-bottom: 20px	
 	&:nth-of-type(3)
 		margin: 0 130px
-		+r(1100)
+		+r(1099)
 			margin: 0 50px
-		+r(768)
+		+r(767)
 			margin: 0
-.tab-block__img
+.floor__header
+		font-weight: 600
+.floor__img
 	text-align: center
 	margin-bottom: 5px
 	height: 220px
 	background-position: 50% 0
 	background-repeat: no-repeat
 	width: 165px
-	+r(768)
+	+r(767)
 		margin: 0 auto 5px
 .download-plan
 	text-decoration: underline
@@ -118,7 +117,7 @@
 	right: 15px
 	bottom: 15px
 	color: #77bd54
-	+r(768)
+	+r(767)
 		position: relative
 		right: 0
 		text-align: center

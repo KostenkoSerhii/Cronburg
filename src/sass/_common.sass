@@ -1,7 +1,7 @@
 $font-family: "Open Sans"
 $simple-text-color: #222
-$simple-text-style: 400 16px/30px "Open Sans"
-$simple-text-style-tablet-mobile: 400 14px/24px "Open Sans"
+$simple-text-style: 400 16px/1.8em "Open Sans", sans-serif
+$simple-text-style-tablet-mobile: 400 14px/1.7em "Open Sans", sans-serif
 $header-menu-item-color: #ac975e
 $contact-phone-color: #aac8ea
 $tab-cols: (1: #b84848, 2: #b8b748, 3: #6db848, 4: #48b7b8, 5: #4862b8, 6: #b848aa)
@@ -11,16 +11,16 @@ $contacts-custom-color: #aac8ea
 *
 	box-sizing: border-box
 
-h2
+.h2
 	color: #375272
-	font: 600 30px/36px $font-family
+	font: 600 30px/1.2em $font-family, sans-serif
 	text-transform: uppercase
 	+r(1100)
-		font: 600 22px/28px $font-family
+		font: 600 22px/1.3em $font-family, sans-serif
 	+r(768)
-		font: 600 16px/20px $font-family
+		font: 600 16px/1.25em $font-family, sans-serif
 .input-default, .textarea-default
-		font: 400 16px $font-family
+		font: 400 16px $font-family, sans-serif
 		font-style: italic
 		padding: 10px 10px
 		width: 100%
@@ -33,26 +33,28 @@ h2
 	background: #ff151f
 	padding: 10px
 	color: #fff
-	font: 600 16px $font-family
+	font: 600 16px $font-family, sans-serif
 	text-transform: uppercase
 	+tr(all .3s)
 	&:hover
 		color: #ff151f
 		background: #fff
 		box-shadow: inset 0 0 3px rgba(25, 24, 20, 0.24)
-		
 	&:active
 		box-shadow:  0 0 3px rgba(25, 24, 20, 0.24)
-.cloce-default
+.close-default
 	display: block
 	text-align: center
 	color: #fff
-	font: 400 16px/26px $font-family
+	font: 400 16px/1.6em $font-family, sans-serif
 	width: 26px
 	height: 26px
 	background: #8a2222
 	border-radius: 50%
 	cursor: pointer
+	opacity: 1
+	right: 15px
+	top: 15px
 	+r(1100)
 		width: 40px
 		height: 40px

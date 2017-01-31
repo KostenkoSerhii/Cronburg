@@ -2,12 +2,12 @@
 <div class="quarter-plan-tabs container">
 	<div id="tabs" >
 		<ul class="tabs-nav">
-			<li><a href="#tabs-1">A</a></li>
-			<li><a href="#tabs-2">B</a></li>
-			<li><a href="#tabs-3">C</a></li>
-			<li><a href="#tabs-4">D</a></li>
-			<li><a href="#tabs-5">E</a></li>
-			<li><a href="#tabs-6">F</a></li>
+			<li class="tabs-nav__item"><a href="#tabs-1">A</a></li>
+			<li class="tabs-nav__item"><a href="#tabs-2">B</a></li>
+			<li class="tabs-nav__item"><a href="#tabs-3">C</a></li>
+			<li class="tabs-nav__item"><a href="#tabs-4">D</a></li>
+			<li class="tabs-nav__item"><a href="#tabs-5">E</a></li>
+			<li class="tabs-nav__item"><a href="#tabs-6">F</a></li>
 		</ul>
 		{% import "data/data.html" as tests %}
 		{% for test in tests.tabs %}
@@ -15,25 +15,25 @@
 			<div class="tab-item__description">
 				Таунхаус «{{test.townhouseclass}}» <span>108,97 м<sup>2</sup></span>
 			</div>
-			<div class="tab-block tab-item__block  ">
-				<div class="tab-block__img" style="background-image: url(img/tab1-img.jpg);">
+			<div class="floor">
+				<div class="floor__img" style="background-image: url(img/tab1-img.jpg);">
 				</div>
-				<h3>I этаж</h3>
+				<h3 class="floor__header">I этаж</h3>
 				<p>Общая площадь без учета перегородок</p>
 				<span>36,24 кв.м</span>
 			</div>
-			<div class="tab-block  tab-item__block ">
-				<div class="tab-block__img" style="background-image: url(img/tab2-img.jpg);">
+			<div class="floor">
+				<div class="floor__img" style="background-image: url(img/tab2-img.jpg);">
 				</div>
-				<h3>II этаж</h3>
+				<h3 class="floor__header">II этаж</h3>
 				<p>Общая площадь без учета перегородок</p>
 				<span>33,22 кв.м</span><br>
 				<span>балкон 0,72 кв.м</span>
 			</div>
-			<div class="tab-block  tab-item__block ">
-				<div class="tab-block__img" style="background-image: url(img/tab3-img.jpg);">
+			<div class="floor">
+				<div class="floor__img" style="background-image: url(img/tab3-img.jpg);">
 				</div>
-				<h3>Мансардный этаж</h3>
+				<h3 class="floor__header">Мансардный этаж</h3>
 				<p>Общая площадь без учета перегородок</p>
 				<span>24,10 кв.м</span><br>
 			</div>

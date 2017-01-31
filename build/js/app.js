@@ -3796,6 +3796,10 @@ $(document).ready(function () {
   $('#tabs').tabs();
   /*end scrollto*/
 
+  /*begin services-sliders*/
+  $('.js-services-slider').slick();
+  /*end services-sliders*/
+
   /*begin advantages popup*/
   $('.js-popup').magnificPopup({
     type: 'inline',
@@ -3808,7 +3812,7 @@ $(document).ready(function () {
   var doc_width = $(window).width();
   if (doc_width <= "768") {
     /*		var builderDescriptionRight = $(".builder-description__right").detach();
-    		$(".builder-description-middle").before(builderDescriptionRight);*/
+    $(".builder-description-middle").before(builderDescriptionRight);*/
 
     $(".js-header-menu-btn").on("click", function () {
       $(".header-menu").slideToggle();

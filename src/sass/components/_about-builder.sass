@@ -6,7 +6,7 @@
 	display: inline-block
 	font-size: 31px
 	margin-bottom: 25px
-	+r(768)
+	+r(767)
 		font-size: 16px
 	&:before, &:after
 		content: ''
@@ -14,7 +14,7 @@
 		top: 50%
 		transform: translateY(-50%)
 		+s(about-builder)
-		+r(768)
+		+r(767)
 			display: none
 	&:before
 		left: -127px
@@ -24,11 +24,11 @@
 	&+p
 		color: #ef3122
 		text-transform: uppercase
-		font: 700 20px $font-family
+		font: 700 20px $font-family, sans-serif
 		margin-bottom: 56px
-		+r(1100)
+		+r(1099)
 			font-size: 18px
-		+r(768)
+		+r(767)
 			font-size: 14px
 			margin-bottom: 10px
 .about-builder
@@ -36,83 +36,71 @@
 	padding-bottom: 75px
 	text-align: center
 	background: #f5f5f5
-.builder-description-wrapper
+.desc
 	text-align: left
-	+r(1100)
-
-	+r(768)
-
-	.col, .col-last
+.desc__second-block
+	text-align: center
+	color: #222
+	font: 400 16px/1.87em $font-family, sans-serif
+	text-transform: none
+	+r(767)
+		margin-top: 20px
+	p.second-block__p
+		margin: 25px 0
+	span
 		color: #222
-		font: 400 24px/30px $font-family
-		text-transform: uppercase
-		+r(1100)
-			font: 400 18px/24px $font-family
-		+r(768)
-			font: $simple-text-style-tablet-mobile
-			text-transform: none
-			margin-bottom: 0
-		p
-			margin-bottom: 45px
-			+r(1100)
-				margin-bottom: 20px
-			+r(768)
-				margin-bottom: 10px
-				br
-					display: none
-			&:last-of-type
-				margin-bottom: 0
-		span
-			color: #4faea2
-			font-size: 36px
-			font-weight: 700
-			+r(1100)
-				font-size: 28px
-			+r(768)
-				font-size: 20px
-			span
-				font-size: 24px
-				+r(1100)
-					font-size: 18px
-				+r(768)
-					font-size: 16px
-				text-transform: none
-			&.gold-partner
-				font-size: 24px
-				text-transform: uppercase
-				+r(768)
-					font-size: 20px
-	.desc__second-block
-		text-align: center
-		color: #222
-		font: 400 16px/30px $font-family
-		text-transform: none
-		+r(768)
-			margin-top: 20px
-		p.second-block__p
-			margin: 25px 0
-		span
-			color: #222
-			font: 400 16px $font-family
-			line-height: 30px
-			+r(1100)
-				font-size: 16px
-		a
-			color: #ff151f
-			line-height: 24px
-			+r(768)
-				display: block
-
+	a
+		color: #ff151f
+		line-height: 1.5em
+		+r(767)
+			display: block
 .desc__third-block
 	text-align: right
 	p:last-of-type
 		font-size: 16px
 		text-transform: none
-		line-height: 24px
-		+r(768)
+		line-height: 1.25em
+		+r(767)
 			font-size: 14px
-
 .desc__first-block, .desc__third-block
 	padding-top: 10px
-	+r(768)
+	color: #222
+	font: 400 24px/1.25em $font-family, sans-serif
+	text-transform: uppercase
+	+r(1099)
+		font: 400 18px/1.3em $font-family, sans-serif
+	+r(767)
+		font: $simple-text-style-tablet-mobile
+		text-transform: none
+		margin-bottom: 0
 		text-align: center
+	p
+		margin-bottom: 45px
+		+r(1099)
+			margin-bottom: 20px
+		+r(767)
+			margin-bottom: 10px
+			br
+				display: none
+		&:last-of-type
+			margin-bottom: 0
+	span
+		color: #4faea2
+		font-size: 36px
+		font-weight: 700
+		+r(1099)
+			font-size: 28px
+		+r(767)
+			font-size: 20px
+		span
+			font-size: 24px
+			+r(1099)
+				font-size: 18px
+			+r(767)
+				font-size: 16px
+			text-transform: none
+		&.gold-partner
+			font-size: 24px
+			text-transform: uppercase
+			+r(767)
+				font-size: 20px

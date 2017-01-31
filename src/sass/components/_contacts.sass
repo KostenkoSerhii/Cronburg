@@ -1,7 +1,7 @@
 .contacts__h2
 	color: $contacts-custom-color
 	margin-bottom: 40px
-	+r(768)
+	+r(767)
 		margin-bottom: 20px
 .contacts
 	padding-bottom: 175px
@@ -10,21 +10,22 @@
 	background-size: cover
 	color: #fff
 	font: $simple-text-style
-	line-height: 24px
-	+r(1100)
+	line-height: 1.5em
+	+r(1099)
 		padding-top: 60px
 		font: $simple-text-style-tablet-mobile
 		.col:first-of-type
 			margin-right: 20px
-	+r(768)
+	+r(767)
 		text-align: center
 		padding-top: 40px
-	.col:first-of-type
-		+r(768)
-			margin-right: 0px
 	.col
-		+r(768)
+		+r(767)
 			text-align: center
+		&:first-of-type
+			+r(767)
+				margin-right: 0px
+
 	a
 		color: #fff
 	strong, .custom-color
@@ -34,7 +35,7 @@
 			color: inherit
 	p
 		margin-bottom: 30px
-		+r(768)
+		+r(767)
 			margin-bottom: 10px
 .callback-questions
 	text-align: center
@@ -45,22 +46,21 @@
 	right: 0px
 	z-index: 11
 	top: 0
-	+r(1100)
+	+r(1099)
 		width: 280px
-	+r(768)
+	+r(767)
 		position: relative
 		margin: 0 auto
-	p
-		color: #375272
-		font: 600 30px/30px $font-family
-		text-transform: uppercase
-		margin-bottom: 20px
-		+r(1100)
-			font-size: 24px
 	input
 		margin-bottom: 10px
 	textarea
 		resize: none
 		height: 150px
 		margin-bottom: 20px
-
+.callback-questions__header
+	color: #375272
+	font: 600 30px/1em $font-family, sans-serif
+	text-transform: uppercase
+	margin-bottom: 20px
+	+r(1099)
+		font-size: 24px

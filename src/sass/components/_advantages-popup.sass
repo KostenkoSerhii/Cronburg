@@ -3,10 +3,11 @@
 	width: 100%
 	border-radius: 20px
 	background: #fff
-	padding: 50px 45px
+	padding: 30px 45px
 	position: relative
 	margin: 0 auto
-	.cloce-default
+	+clr
+	.close-default
 		opacity: 1
 		color: #fff
 		position: absolute
@@ -15,25 +16,27 @@
 		&:hover
 			color: #8a2222
 .adv-popup-block__img
+	width: 200px
+	height: 200px
 	border-radius: 50%
+	+cover
 	border: 3px solid #375272
 	float: left
 	margin-right: 37px
-	+r(768)
+	+r(767)
 		display: none
 .adv-popup-block__title
 	margin-top: 30px
 	margin-bottom: 14px
 	vertical-align: top
 	color: #375272
-	font: 600 20px/30px $font-family
-	display: block
-	+r(768)
+	font: 600 20px/1.5em $font-family, sans-serif
+	+r(767)
 		margin-top: 0
 .adv-popup-block__description
 	display: block
 	color: #222
-	font: 400 16px/18px $font-family
+	font: 400 16px/1.5em $font-family, sans-serif
 .mfp-fade
   &.mfp-bg
     opacity: 0

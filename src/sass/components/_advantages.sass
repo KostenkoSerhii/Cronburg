@@ -8,46 +8,45 @@
 .advantages__image-block
 	margin-top: 45px
 	text-align: center
-	.image-block__item
-		width: 280px
-		text-align: center
-		margin-bottom: 36px
-		display: inline-block
+.image-block__item
+	width: 280px
+	text-align: center
+	margin-bottom: 36px
+	display: inline-block
+	&:nth-of-type(3n+2)
+		margin: 0 30px 36px
+	+r(1099)
 		&:nth-of-type(3n+2)
-			margin: 0 30px 36px
-		+r(1100)
-			&:nth-of-type(3n+2)
-				margin: 0 0 36px
-		+r(768)
-			text-align: center
-			
-		a
-			display: inline-block
-			margin-bottom: 5px
-			cursor: pointer
-			width: 200px
-			height: 200px
-			background-position: 50% 50%
-			background-size: cover
-			border: 2px solid #fff
-			border-radius: 50%
-			transition: all .3s
-			position: relative
-			&:hover
-				border: 10px solid #fff
-		span
-			font: 600 20px $font-family
-			color: white;
-			+r(768)
-				display: block
-				font-size: 16px
+			margin: 0 0 36px
+	+r(767)
+		text-align: center
+	span
+		font: 600 20px $font-family, sans-serif
+		color: white;
+		+r(767)
+			display: block
+			font-size: 16px
+.adv-popup-link
+	display: inline-block
+	margin-bottom: 5px
+	cursor: pointer
+	width: 200px
+	height: 200px
+	background-position: 50% 50%
+	background-size: cover
+	border: 2px solid #fff
+	border-radius: 50%
+	transition: all .3s
+	position: relative
+	&:hover
+		border: 10px solid #fff
 .advantages-description
 	.wrapper
 		p, strong
 			color: #fff
 			font: $simple-text-style
 			margin-bottom: 30px
-			+r(768)
+			+r(767)
 				margin-bottom: 10px
 				font: $simple-text-style-tablet-mobile
 		strong
@@ -59,8 +58,8 @@
 	margin-top: 30px
 	margin-bottom: 65px
 	color: #aac8ea
-	+r(768)
+	+r(767)
 		margin-bottom: 20px
 .advantages-description__item
-	+r(768)
+	+r(767)
 		margin-bottom: 0

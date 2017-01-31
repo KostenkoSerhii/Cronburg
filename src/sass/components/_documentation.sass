@@ -12,15 +12,26 @@
 	margin-bottom: 30px
 .documentation-list
 	text-align: center
-.documentation__item
+.doc-block	
+	vertical-align: top
 	width: 270px
-	margin-bottom: 25px
+	display: inline-block
+	position: relative
 	text-align: left
-	+rmin(1100)
+	margin-bottom: 25px
+	padding-left: 45px
+	min-height: 48px
+	+rmin(1099)
 		&:nth-of-type(3n+2)
 			margin: 0 40px
 	&:last-of-type
 		margin-bottom: 0
+	a
+		color: #fff
+		font: 400 16px/1.5em $font-family, sans-serif
+		text-decoration: underline
+	&:hover
+		text-decoration: none
 	&.download-pdf, &.download-jpg
 		&:before
 			content: ''
@@ -33,13 +44,3 @@
 	&.download-jpg
 		&:before
 			+s(jpg-down)
-.doc-block	
-	padding-left: 45px
-	display: inline-block
-	position: relative
-	a
-		color: #fff
-		font: 400 16px/24px $font-family
-		text-decoration: underline
-	&:hover
-		text-decoration: none

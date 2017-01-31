@@ -1,8 +1,8 @@
-<div class="townhouse__slider-container slider-container">
+<div class="slider-container">
 	<div class="slider responsive">
 		{% import "data/data.html" as tests %}
 		{% for test in tests.list %}
-		<div><img  class="townhouse-slider__img" src="{{test.img}}" alt="{{test.alt}}"></div>
+		<div><img  class="slider__img" src="{{test.img}}" alt="{{test.alt}}"></div>
 		{% endfor %}
 	</div>
 </div>
